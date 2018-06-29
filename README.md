@@ -1,0 +1,2 @@
+# XDialog
+XDialog,flexable dialog
