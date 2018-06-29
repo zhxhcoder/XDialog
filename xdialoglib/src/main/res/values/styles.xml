@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- popwindow 弹出 收起动画 -->
+    <style name="popWindow_animation">
+        <item name="android:windowEnterAnimation">@anim/popwindow_enter</item>
+        <item name="android:windowExitAnimation">@anim/popwindow_exit</item>
+    </style>
+    <style name="popWindow_animation1">
+        <item name="android:windowEnterAnimation">@anim/popwindow_enter1</item>
+        <item name="android:windowExitAnimation">@anim/popwindow_exit1</item>
+    </style>
+</resources>
