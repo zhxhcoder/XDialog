@@ -169,7 +169,7 @@ public class CustomToast implements IToast {
         if (mView.getParent() != null) {
             mWindowManager.removeView(mView);
         }
-        Log.e(TAG, "addview");
+        Log.e(TAG, "addView");
         mWindowManager.addView(mView, mParams);
         mHandler.postDelayed(new Runnable() {
             @Override
