@@ -7,13 +7,13 @@ XDialog,flexable dialog
 <dependency>
   <groupId>com.zhxh</groupId>
   <artifactId>xdialoglib</artifactId>
-  <version>1.1</version>
+  <version>1.5</version>
   <type>pom</type>
 </dependency>
 ~~~
 
 ~~~
-implementation 'com.zhxh:xdialoglib:1.1'
+implementation 'com.zhxh:xdialoglib:1.5'
 ~~~
 
 # 下版计划
