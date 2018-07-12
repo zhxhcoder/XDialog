@@ -34,6 +34,6 @@ dependencies {
     implementation project(':xdialoglib')
     //implementation(name: 'xdialog', ext: 'aar')
     //implementation 'com.zhxh:xdialoglib:1.1'
-    implementation 'com.jakewharton:butterknife:7.0.1'
+    implementation 'com.jakewharton:butterknife:8.8.1'
 
 }

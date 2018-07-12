@@ -27,7 +27,7 @@ import com.zhxh.xdialoglib.dialog.widget.DateSelectorWheelView;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -36,10 +36,10 @@ public class DialogActivity extends AppCompatActivity {
 
     Activity mActivity;
     Context mContext;
-    @Bind(R.id.ll_main)
-    LinearLayout llMain;
-    @Bind(R.id.btn_popu)
-    Button btnPopu;
+    @BindView(R.id.ll_main)
+    LinearLayout ll_main;
+    @BindView(R.id.btn_pop)
+    Button btn_pop;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,11 +57,11 @@ public class DialogActivity extends AppCompatActivity {
             R.id.btn_bottom_sheet_cancel, R.id.btn_center_sheet, R.id.btn_alert_input,
             R.id.btn_alert_multichoose, R.id.btn_alert_singlechoose, R.id.btn_md_bottom_vertical, R.id.btn_md_bottom_horizontal,
             R.id.btn_toast_top, R.id.btn_toast_center, R.id.btn_toast,
-            R.id.btn_select_ymd, R.id.btn_select_ymdhm, R.id.btn_select_ymdhms, R.id.btn_popu})
+            R.id.btn_select_ymd, R.id.btn_select_ymdhm, R.id.btn_select_ymdhms, R.id.btn_pop})
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.btn_popu:
-                DialogUtils.showPopuWindow(mContext, LinearLayout.LayoutParams.MATCH_PARENT, 4, btnPopu, new TdataListener() {
+            case R.id.btn_pop:
+                DialogUtils.showPopuWindow(mContext, LinearLayout.LayoutParams.MATCH_PARENT, 4, btn_pop, new TdataListener() {
                     @Override
                     public void initPopData(List<PopBean> lists) {
                         for (int i = 0; i < 5; i++) {
