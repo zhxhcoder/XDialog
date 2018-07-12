@@ -19,25 +19,23 @@ import com.zhxh.xdialoglib.dialog.listener.DialogUIItemListener;
 import com.zhxh.xdialoglib.dialog.listener.DialogUIListener;
 import com.zhxh.xdialoglib.dialog.listener.TdataListener;
 import com.zhxh.xdialoglib.dialog.utils.ToolUtils;
-import com.zhxh.xdialoglib.dialog.widget.PopuWindowView;
+import com.zhxh.xdialoglib.dialog.widget.PopupWindowView;
 
 import java.util.List;
 
 
 public class DialogUtils {
-
     /**
      * 全局上下文
      */
     public static Context appContext;
 
     /**
-     * 如果有使用到showTost...相关的方法使用之前需要初始化该方法
+     * 如果有使用到showToast...相关的方法使用之前需要初始化该方法
      */
     public static void init(Context appContext) {
         DialogUtils.appContext = appContext;
     }
-
     /**
      * 关闭弹出框
      */
@@ -59,7 +57,6 @@ public class DialogUtils {
 
         }
     }
-
     /**
      * 关闭弹出框
      */
@@ -503,8 +500,8 @@ public class DialogUtils {
         dismiss(mBuildBean);
     }
 
-    public static void showPopuWindow(Context context, int widthGravity,int maxLine, View view, TdataListener tdataListener) {
-        PopuWindowView popuWindowView = new PopuWindowView(context, widthGravity);
+    public static void showPopWindow(Context context, int widthGravity, int maxLine, View view, TdataListener tdataListener) {
+        PopupWindowView popuWindowView = new PopupWindowView(context, widthGravity);
         popuWindowView.setMaxLines(maxLine);
         popuWindowView.initPupoData(tdataListener);
         popuWindowView.showing(view);

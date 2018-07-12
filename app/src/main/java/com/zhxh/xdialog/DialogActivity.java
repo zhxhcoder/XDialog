@@ -61,7 +61,7 @@ public class DialogActivity extends AppCompatActivity {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_pop:
-                DialogUtils.showPopuWindow(mContext, LinearLayout.LayoutParams.MATCH_PARENT, 4, btn_pop, new TdataListener() {
+                DialogUtils.showPopWindow(mContext, LinearLayout.LayoutParams.MATCH_PARENT, 4, btn_pop, new TdataListener() {
                     @Override
                     public void initPopData(List<PopBean> lists) {
                         for (int i = 0; i < 5; i++) {
