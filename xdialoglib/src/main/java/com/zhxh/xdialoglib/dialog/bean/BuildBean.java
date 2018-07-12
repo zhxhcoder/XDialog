@@ -7,7 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
 import android.view.View;
 
-import com.zhxh.xdialoglib.dialog.adapter.SuperAdapter;
+import com.zhxh.xdialoglib.dialog.adapter.BaseAdapter;
 import com.zhxh.xdialoglib.dialog.config.DialogConfig;
 import com.zhxh.xdialoglib.dialog.listener.Buildable;
 import com.zhxh.xdialoglib.dialog.listener.DialogUIDateTimeSaveListener;
@@ -79,7 +79,7 @@ public class BuildBean extends Buildable implements Styleable {
     public boolean[] checkedItems;
 
     //bottomsheet
-    public SuperAdapter mAdapter;
+    public BaseAdapter mAdapter;
     public List<TieBean> mLists;
     public int gridColumns = 4;
 

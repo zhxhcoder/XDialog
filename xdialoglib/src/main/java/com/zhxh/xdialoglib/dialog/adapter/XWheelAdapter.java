@@ -1,7 +1,7 @@
 package com.zhxh.xdialoglib.dialog.adapter;
 
 
-public class StrericWheelAdapter implements WheelAdapter {
+public class XWheelAdapter implements WheelAdapter {
 	
 	/** The default min value */
 	private String[] strContents;
@@ -9,7 +9,7 @@ public class StrericWheelAdapter implements WheelAdapter {
 	 * 构造方法
 	 * @param strContents
 	 */
-	public StrericWheelAdapter(String[] strContents){
+	public XWheelAdapter(String[] strContents){
 		this.strContents=strContents;
 	}
 	

@@ -842,7 +842,7 @@ public class WheelView extends View {
      */
     public String getCurrentItemValue() {
         // return
-        // ((StrericWheelAdapter)getAdapter()).getStrContents()[getCurrentItem()];
+        // ((XWheelAdapter)getAdapter()).getStrContents()[getCurrentItem()];
         return getAdapter().getItem(getCurrentItem());
     }
 

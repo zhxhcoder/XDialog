@@ -12,7 +12,7 @@ import com.zhxh.xdialoglib.dialog.holder.TieItemHolder;
 import java.util.List;
 
 
-public class TieAdapter extends SuperAdapter<TieBean> {
+public class TieAdapter extends BaseAdapter<TieBean> {
 
     private boolean isItemType;
 

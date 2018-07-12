@@ -11,8 +11,7 @@ import com.zhxh.xdialoglib.dialog.listener.OnItemClickListener;
 import java.util.List;
 
 
-public abstract class SuperAdapter<T> extends Adapter<ViewHolder> {
-
+public abstract class BaseAdapter<T> extends Adapter<ViewHolder> {
     /**
      * 上下文
      */
@@ -27,7 +26,7 @@ public abstract class SuperAdapter<T> extends Adapter<ViewHolder> {
     private SuperItemHolder baseHolder;
     protected OnItemClickListener mListener;
 
-    public SuperAdapter(Context mContext, List<T> mDatas) {
+    public BaseAdapter(Context mContext, List<T> mDatas) {
         this.mContext = mContext;
         setmDatas(mDatas);
     }
@@ -47,7 +46,7 @@ public abstract class SuperAdapter<T> extends Adapter<ViewHolder> {
     }
 
     /**
-     * 1top 2midle 3bottom 4all
+     * 1 top 2 middle 3 bottom 4 all
      */
     protected int countPosition(int position) {
         return 2;

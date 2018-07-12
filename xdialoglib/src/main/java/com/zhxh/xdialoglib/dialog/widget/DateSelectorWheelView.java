@@ -11,7 +11,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.zhxh.xdialoglib.R;
-import com.zhxh.xdialoglib.dialog.adapter.StrericWheelAdapter;
+import com.zhxh.xdialoglib.dialog.adapter.XWheelAdapter;
 import com.zhxh.xdialoglib.dialog.listener.OnWheelChangedListener;
 
 import java.text.SimpleDateFormat;
@@ -78,16 +78,16 @@ public class DateSelectorWheelView extends RelativeLayout implements
      */
     private String[] seconds = new String[60];
 
-    private StrericWheelAdapter yearsAdapter;
-    private StrericWheelAdapter monthsAdapter;
-    private StrericWheelAdapter tinyDaysAdapter;
-    private StrericWheelAdapter smallDaysAdapter;
-    private StrericWheelAdapter bigDaysAdapter;
-    private StrericWheelAdapter normalDaysAdapter;
+    private XWheelAdapter yearsAdapter;
+    private XWheelAdapter monthsAdapter;
+    private XWheelAdapter tinyDaysAdapter;
+    private XWheelAdapter smallDaysAdapter;
+    private XWheelAdapter bigDaysAdapter;
+    private XWheelAdapter normalDaysAdapter;
 
-    private StrericWheelAdapter hoursAdapter;
-    private StrericWheelAdapter minutesAdapter;
-    private StrericWheelAdapter secondsAdapter;
+    private XWheelAdapter hoursAdapter;
+    private XWheelAdapter minutesAdapter;
+    private XWheelAdapter secondsAdapter;
     private int currentDateType;
     private int todayHour;
     private int todayMinute;
@@ -213,16 +213,16 @@ public class DateSelectorWheelView extends RelativeLayout implements
         }
 
 
-        yearsAdapter = new StrericWheelAdapter(years);
-        monthsAdapter = new StrericWheelAdapter(months);
-        tinyDaysAdapter = new StrericWheelAdapter(tinyDays);
-        smallDaysAdapter = new StrericWheelAdapter(smallDays);
-        normalDaysAdapter = new StrericWheelAdapter(normalDays);
-        bigDaysAdapter = new StrericWheelAdapter(bigDays);
+        yearsAdapter = new XWheelAdapter(years);
+        monthsAdapter = new XWheelAdapter(months);
+        tinyDaysAdapter = new XWheelAdapter(tinyDays);
+        smallDaysAdapter = new XWheelAdapter(smallDays);
+        normalDaysAdapter = new XWheelAdapter(normalDays);
+        bigDaysAdapter = new XWheelAdapter(bigDays);
 
-        hoursAdapter = new StrericWheelAdapter(hours);
-        minutesAdapter = new StrericWheelAdapter(minutes);
-        secondsAdapter = new StrericWheelAdapter(seconds);
+        hoursAdapter = new XWheelAdapter(hours);
+        minutesAdapter = new XWheelAdapter(minutes);
+        secondsAdapter = new XWheelAdapter(seconds);
 
         wvYear.setAdapter(yearsAdapter);
         wvYear.setCyclic(true);

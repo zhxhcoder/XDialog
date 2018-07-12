@@ -15,7 +15,6 @@ import java.util.List;
 
 
 public class PopWindowAdapter extends BaseAdapter {
-
     /**
      * 上下文
      */
