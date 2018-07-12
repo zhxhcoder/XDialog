@@ -6,10 +6,10 @@ import android.view.View;
 
 import com.zhxh.xdialoglib.dialog.bean.BuildBean;
 
-public abstract class SuperHolder {
+public abstract class BaseHolder {
     public View rootView;
 
-    public SuperHolder(Context context) {
+    public BaseHolder(Context context) {
         rootView = View.inflate(context, setLayoutRes(), null);
         findViews();
     }
@@ -26,7 +26,7 @@ public abstract class SuperHolder {
      * @param context
      * @param bean
      */
-    public abstract void assingDatasAndEvents(Context context, BuildBean bean);
+    public abstract void assignDatasAndEvents(Context context, BuildBean bean);
 
 
 }

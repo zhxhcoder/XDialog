@@ -17,7 +17,7 @@ import com.zhxh.xdialoglib.dialog.bean.BuildBean;
 import com.zhxh.xdialoglib.dialog.listener.OnItemClickListener;
 import com.zhxh.xdialoglib.dialog.widget.DialogUIDividerItemDecoration;
 
-public class SheetHolder extends SuperHolder {
+public class SheetHolder extends BaseHolder {
 
     private TextView tvTitle;
     private RecyclerView rView;
@@ -43,7 +43,7 @@ public class SheetHolder extends SuperHolder {
     }
 
     @Override
-    public void assingDatasAndEvents(final Context context, final BuildBean bean) {
+    public void assignDatasAndEvents(final Context context, final BuildBean bean) {
         if (TextUtils.isEmpty(bean.bottomTxt)) {
             btnBottom.setVisibility(View.GONE);
         } else {

@@ -14,7 +14,7 @@ import com.zhxh.xdialoglib.R;
 import com.zhxh.xdialoglib.dialog.utils.ToolUtils;
 import com.zhxh.xdialoglib.dialog.bean.BuildBean;
 
-public class AlertDialogHolder extends SuperHolder {
+public class AlertDialogHolder extends BaseHolder {
     protected TextView tvTitle;
     public TextView tvMsg;
     public EditText et1;
@@ -65,7 +65,7 @@ public class AlertDialogHolder extends SuperHolder {
     }
 
     @Override
-    public void assingDatasAndEvents(Context context, final BuildBean bean) {
+    public void assignDatasAndEvents(Context context, final BuildBean bean) {
 
         //style
         tvMsg.setTextColor(ToolUtils.getColor(tvMsg.getContext(), bean.msgTxtColor));

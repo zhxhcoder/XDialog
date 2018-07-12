@@ -294,7 +294,7 @@ public class Buildable {
         builder.setView(holder.rootView);
         AlertDialog dialog = builder.create();
         bean.alertDialog = dialog;
-        holder.assingDatasAndEvents(bean.mContext, bean);
+        holder.assignDatasAndEvents(bean.mContext, bean);
         return bean;
     }
 
@@ -321,7 +321,7 @@ public class Buildable {
             Window window = dialog.getWindow();
             window.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         }
-        holder.assingDatasAndEvents(bean.mContext, bean);
+        holder.assignDatasAndEvents(bean.mContext, bean);
         return bean;
     }
 
@@ -329,7 +329,7 @@ public class Buildable {
         BottomSheetDialog dialog = new BottomSheetDialog(bean.mContext);
         SheetHolder sheetHolder = new SheetHolder(bean.mContext, false);
         dialog.setContentView(sheetHolder.rootView);
-        sheetHolder.assingDatasAndEvents(bean.mContext, bean);
+        sheetHolder.assignDatasAndEvents(bean.mContext, bean);
         bean.dialog = dialog;
     }
 
