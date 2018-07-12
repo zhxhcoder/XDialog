@@ -20,7 +20,7 @@
                 android:id="@+id/btn_pop"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="popuwindow" />
+                android:text="popupwindow" />
 
             <Button
                 android:id="@+id/btn_custom_alert"
