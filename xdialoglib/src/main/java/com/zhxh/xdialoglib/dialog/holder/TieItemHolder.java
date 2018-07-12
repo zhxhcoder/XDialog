@@ -9,8 +9,10 @@ import com.zhxh.xdialoglib.R;
 import com.zhxh.xdialoglib.dialog.bean.TieBean;
 import com.zhxh.xdialoglib.dialog.listener.OnItemClickListener;
 
-
-public class TieItemHolder extends SuperItemHolder<TieBean> {
+/**
+ * Created by zhxh on 2018/7/5
+ */
+public class TieItemHolder extends BaseItemHolder<TieBean> {
 
     LinearLayout llTie;
     TextView tvTitle;

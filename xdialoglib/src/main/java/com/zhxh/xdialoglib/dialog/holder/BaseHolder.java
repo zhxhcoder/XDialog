@@ -5,7 +5,9 @@ import android.support.annotation.LayoutRes;
 import android.view.View;
 
 import com.zhxh.xdialoglib.dialog.bean.BuildBean;
-
+/**
+ * Created by zhxh on 2018/7/5
+ */
 public abstract class BaseHolder {
     public View rootView;
 

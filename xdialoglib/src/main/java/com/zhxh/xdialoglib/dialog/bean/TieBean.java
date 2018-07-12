@@ -1,7 +1,9 @@
 package com.zhxh.xdialoglib.dialog.bean;
 
 import java.io.Serializable;
-
+/**
+ * Created by zhxh on 2018/7/5
+ */
 public class TieBean implements Serializable {
 
     private int id;

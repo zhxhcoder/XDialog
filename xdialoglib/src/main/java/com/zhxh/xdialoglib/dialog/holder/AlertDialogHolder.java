@@ -1,6 +1,5 @@
 package com.zhxh.xdialoglib.dialog.holder;
 
-
 import android.content.Context;
 import android.text.TextUtils;
 import android.view.View;
@@ -14,6 +13,9 @@ import com.zhxh.xdialoglib.R;
 import com.zhxh.xdialoglib.dialog.utils.ToolUtils;
 import com.zhxh.xdialoglib.dialog.bean.BuildBean;
 
+/**
+ * Created by zhxh on 2018/7/5
+ */
 public class AlertDialogHolder extends BaseHolder {
     protected TextView tvTitle;
     public TextView tvMsg;

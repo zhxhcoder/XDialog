@@ -5,12 +5,14 @@ import android.support.v7.widget.RecyclerView.Adapter;
 import android.support.v7.widget.RecyclerView.ViewHolder;
 import android.view.ViewGroup;
 
-import com.zhxh.xdialoglib.dialog.holder.SuperItemHolder;
+import com.zhxh.xdialoglib.dialog.holder.BaseItemHolder;
 import com.zhxh.xdialoglib.dialog.listener.OnItemClickListener;
 
 import java.util.List;
 
-
+/**
+ * Created by zhxh on 2018/7/5
+ */
 public abstract class BaseAdapter<T> extends Adapter<ViewHolder> {
     /**
      * 上下文
@@ -23,7 +25,7 @@ public abstract class BaseAdapter<T> extends Adapter<ViewHolder> {
     /**
      * 获得holder
      */
-    private SuperItemHolder baseHolder;
+    private BaseItemHolder baseHolder;
     protected OnItemClickListener mListener;
 
     public BaseAdapter(Context mContext, List<T> mDatas) {
@@ -39,7 +41,7 @@ public abstract class BaseAdapter<T> extends Adapter<ViewHolder> {
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         if (holder != null) {
-            baseHolder = (SuperItemHolder) holder;
+            baseHolder = (BaseItemHolder) holder;
             baseHolder.setPosition(position);
             baseHolder.setData(mDatas.get(position), countPosition(position));
         }
@@ -68,7 +70,7 @@ public abstract class BaseAdapter<T> extends Adapter<ViewHolder> {
     /**
      * 获得Holder
      */
-    public abstract SuperItemHolder getItemHolder(ViewGroup parent, int viewType);
+    public abstract BaseItemHolder getItemHolder(ViewGroup parent, int viewType);
 
     /**
      * 设置Item点击监听

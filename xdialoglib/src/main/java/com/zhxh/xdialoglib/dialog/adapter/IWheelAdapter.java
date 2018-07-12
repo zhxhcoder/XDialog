@@ -1,5 +1,7 @@
 package com.zhxh.xdialoglib.dialog.adapter;
-
+/**
+ * Created by zhxh on 2018/7/5
+ */
 public interface IWheelAdapter {
 	/**
 	 * Gets items count

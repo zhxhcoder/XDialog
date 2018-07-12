@@ -6,11 +6,13 @@ import android.view.ViewGroup;
 
 import com.zhxh.xdialoglib.R;
 import com.zhxh.xdialoglib.dialog.bean.TieBean;
-import com.zhxh.xdialoglib.dialog.holder.SuperItemHolder;
+import com.zhxh.xdialoglib.dialog.holder.BaseItemHolder;
 import com.zhxh.xdialoglib.dialog.holder.TieItemHolder;
 
 import java.util.List;
-
+/**
+ * Created by zhxh on 2018/7/5
+ */
 
 public class TieAdapter extends BaseAdapter<TieBean> {
 
@@ -26,7 +28,7 @@ public class TieAdapter extends BaseAdapter<TieBean> {
     }
 
     @Override
-    public SuperItemHolder getItemHolder(ViewGroup parent, int viewType) {
+    public BaseItemHolder getItemHolder(ViewGroup parent, int viewType) {
         return new TieItemHolder(mContext, mListener, LayoutInflater.from(mContext).
                 inflate(R.layout.xdialog_holder_item_tie, parent, false));
     }

@@ -31,7 +31,9 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-
+/**
+ * Created by zhxh on 2018/7/5
+ */
 public class DialogActivity extends AppCompatActivity {
 
     Activity mActivity;

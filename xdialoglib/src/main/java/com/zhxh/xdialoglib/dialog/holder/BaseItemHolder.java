@@ -5,8 +5,10 @@ import android.support.v7.widget.RecyclerView.ViewHolder;
 import android.view.View;
 
 import com.zhxh.xdialoglib.dialog.listener.OnItemClickListener;
-
-public abstract class SuperItemHolder<T> extends ViewHolder implements View.OnClickListener {
+/**
+ * Created by zhxh on 2018/7/5
+ */
+public abstract class BaseItemHolder<T> extends ViewHolder implements View.OnClickListener {
 
     /**
      * 上下文
@@ -23,7 +25,7 @@ public abstract class SuperItemHolder<T> extends ViewHolder implements View.OnCl
     protected int position;
     private OnItemClickListener mlistener;
 
-    public SuperItemHolder(Context mContext, OnItemClickListener listener, View itemView) {
+    public BaseItemHolder(Context mContext, OnItemClickListener listener, View itemView) {
         super(itemView);
         itemView.setOnClickListener(this);
         this.mContext = mContext;

@@ -1,22 +1,3 @@
-/*
- *  Android Wheel Control.
- *  https://code.google.com/p/android-wheel/
- *  
- *  Copyright 2010 Yuri Kanivets
- *
- *  Licensed under the Apache License, Version 2.0 (the "License");
- *  you may not use this file except in compliance with the License.
- *  You may obtain a copy of the License at
- *
- *  http://www.apache.org/licenses/LICENSE-2.0
- *
- *  Unless required by applicable law or agreed to in writing, software
- *  distributed under the License is distributed on an "AS IS" BASIS,
- *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- *  See the License for the specific language governing permissions and
- *  limitations under the License.
- */
-
 package com.zhxh.xdialoglib.dialog.widget;
 
 import android.annotation.SuppressLint;
@@ -50,6 +31,9 @@ import com.zhxh.xdialoglib.dialog.utils.ToolUtils;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Created by zhxh on 2018/7/5
+ */
 public class WheelView extends View {
     /**
      * 滚动时长
@@ -132,12 +116,13 @@ public class WheelView extends View {
     private int itemsWidth = 0;
     // Item height
     private int itemHeight = 0;
-    /**文字宽度*/
+    /**
+     * 文字宽度
+     */
     private int labelWidth = 0;
 
     // Count of visible items
     private int visibleItems = DEF_VISIBLE_ITEMS;
-
 
 
     // Text paints
@@ -750,7 +735,7 @@ public class WheelView extends View {
             // Skip padding space and hide a part of top and bottom items
             /** 位移  6等分时除以2,3等分是除以4 */
 //            canvas.translate(this.getWidth() / START_OFFSET, -ITEM_OFFSET);
-            canvas.translate((itemsWidth-labelWidth)/2, -ITEM_OFFSET);
+            canvas.translate((itemsWidth - labelWidth) / 2, -ITEM_OFFSET);
             drawItems(canvas);
             drawValue(canvas);
             canvas.restore();
@@ -849,7 +834,6 @@ public class WheelView extends View {
     public String getCurrentItemId() {
         return getAdapter().getCurrentId(getCurrentItem());
     }
-
 
 
     @Override

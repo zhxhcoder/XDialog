@@ -13,7 +13,9 @@ import com.zhxh.xdialoglib.dialog.bean.PopBean;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * Created by zhxh on 2018/7/5
+ */
 public class PopWindowAdapter extends BaseAdapter {
     /**
      * 上下文

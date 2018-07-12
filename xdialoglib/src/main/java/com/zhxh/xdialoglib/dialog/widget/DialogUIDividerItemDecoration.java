@@ -7,7 +7,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import com.zhxh.xdialoglib.R;
-
+/**
+ * Created by zhxh on 2018/7/5
+ */
 public class DialogUIDividerItemDecoration extends RecyclerView.ItemDecoration {
     private Drawable mDivider;
 

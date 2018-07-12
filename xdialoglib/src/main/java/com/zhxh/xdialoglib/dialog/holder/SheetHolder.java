@@ -16,7 +16,9 @@ import com.zhxh.xdialoglib.dialog.adapter.TieAdapter;
 import com.zhxh.xdialoglib.dialog.bean.BuildBean;
 import com.zhxh.xdialoglib.dialog.listener.OnItemClickListener;
 import com.zhxh.xdialoglib.dialog.widget.DialogUIDividerItemDecoration;
-
+/**
+ * Created by zhxh on 2018/7/5
+ */
 public class SheetHolder extends BaseHolder {
 
     private TextView tvTitle;

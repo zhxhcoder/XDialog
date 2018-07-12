@@ -18,7 +18,9 @@ import com.zhxh.xdialoglib.dialog.utils.ToolUtils;
 
 import java.util.List;
 import java.util.Map;
-
+/**
+ * Created by zhxh on 2018/7/5
+ */
 public class BuildBean extends Buildable implements Styleable {
     /**
      * 上下文
