@@ -15,7 +15,7 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.zhxh.xdialoglib.dialog.DialogUIUtils;
+import com.zhxh.xdialoglib.DialogUtils;
 import com.zhxh.xdialoglib.dialog.R;
 import com.zhxh.xdialoglib.dialog.bean.BuildBean;
 import com.zhxh.xdialoglib.dialog.config.DialogConfig;
@@ -261,7 +261,7 @@ public class Buildable {
                         }
 
                         if (bean.listener == null) {
-                            DialogUIUtils.dismiss(dialogInterface);
+                            DialogUtils.dismiss(dialogInterface);
                         }
 
                     }
@@ -280,7 +280,7 @@ public class Buildable {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         if (bean.listener != null) {
-                            DialogUIUtils.dismiss(dialogInterface);
+                            DialogUtils.dismiss(dialogInterface);
                             bean.listener.onPositive();
                             bean.listener.onGetChoose(bean.checkedItems);
                         }
@@ -290,7 +290,7 @@ public class Buildable {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         if (bean.listener != null) {
-                            DialogUIUtils.dismiss(dialogInterface);
+                            DialogUtils.dismiss(dialogInterface);
                             bean.listener.onNegative();
                         }
                     }

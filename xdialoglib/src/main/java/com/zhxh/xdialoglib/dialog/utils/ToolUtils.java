@@ -13,7 +13,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 
-import com.zhxh.xdialoglib.dialog.DialogUIUtils;
+import com.zhxh.xdialoglib.DialogUtils;
 import com.zhxh.xdialoglib.dialog.bean.BuildBean;
 import com.zhxh.xdialoglib.dialog.config.DialogConfig;
 
@@ -43,12 +43,12 @@ public class ToolUtils {
      */
     public static BuildBean fixContext(BuildBean bean) {
         if (bean.mContext == null) {
-            bean.mContext = DialogUIUtils.appContext;
+            bean.mContext = DialogUtils.appContext;
         } else if (bean.mContext instanceof Activity) {
             Activity activity = (Activity) bean.mContext;
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
                 if (activity.isDestroyed()) {
-                    bean.mContext = DialogUIUtils.appContext;
+                    bean.mContext = DialogUtils.appContext;
                 }
             }
         }
@@ -125,7 +125,7 @@ public class ToolUtils {
             Activity activity1 = (Activity) context;
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
                 if (activity1.isDestroyed()) {
-                    context = DialogUIUtils.appContext;
+                    context = DialogUtils.appContext;
                 }
             }
         } else {
@@ -212,7 +212,7 @@ public class ToolUtils {
      */
     public static int getColor(Context context, int colorRes) {
         if (context == null) {
-            context = DialogUIUtils.appContext;
+            context = DialogUtils.appContext;
         }
         return context.getResources().getColor(colorRes);
 

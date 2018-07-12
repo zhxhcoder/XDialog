@@ -10,14 +10,14 @@
         <item name="android:windowExitAnimation">@anim/popwindow_exit1</item>
     </style>
     <style name="dialogui_bottom_style" parent="android:Animation">
-        <item name="@android:windowEnterAnimation">@anim/dialogui_enter</item>
+        <item name="android:windowEnterAnimation">@anim/dialogui_enter</item>
         //进入时的动画
-        <item name="@android:windowExitAnimation">@anim/dialogui_exit</item>
+        <item name="android:windowExitAnimation">@anim/dialogui_exit</item>
         //退出时的动画
     </style>
 
     <style name="dialogui_center_style" parent="android:Animation">
-        <item name="@android:windowEnterAnimation">@anim/dialogui_enter_center</item>
+        <item name="android:windowEnterAnimation">@anim/dialogui_enter_center</item>
     </style>
 
 
