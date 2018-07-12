@@ -1,7 +1,7 @@
 package com.zhxh.xdialoglib.dialog.adapter;
 
 
-public class XWheelAdapter implements WheelAdapter {
+public class XWheelAdapter implements IWheelAdapter {
 	
 	/** The default min value */
 	private String[] strContents;

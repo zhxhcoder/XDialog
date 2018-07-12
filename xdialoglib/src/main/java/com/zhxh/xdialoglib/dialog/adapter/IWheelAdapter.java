@@ -1,6 +1,6 @@
 package com.zhxh.xdialoglib.dialog.adapter;
 
-public interface WheelAdapter {
+public interface IWheelAdapter {
 	/**
 	 * Gets items count
 	 * @return the count of wheel items

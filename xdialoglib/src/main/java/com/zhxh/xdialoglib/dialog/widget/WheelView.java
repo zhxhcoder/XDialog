@@ -42,7 +42,7 @@ import android.view.animation.Interpolator;
 import android.widget.Scroller;
 
 import com.zhxh.xdialoglib.R;
-import com.zhxh.xdialoglib.dialog.adapter.WheelAdapter;
+import com.zhxh.xdialoglib.dialog.adapter.IWheelAdapter;
 import com.zhxh.xdialoglib.dialog.listener.OnWheelChangedListener;
 import com.zhxh.xdialoglib.dialog.listener.OnWheelScrollListener;
 import com.zhxh.xdialoglib.dialog.utils.ToolUtils;
@@ -125,7 +125,7 @@ public class WheelView extends View {
     private static final int DEF_VISIBLE_ITEMS = 5;
 
     // Wheel Values
-    private WheelAdapter adapter = null;
+    private IWheelAdapter adapter = null;
     private int currentItem = 0;
 
     // Widths
@@ -222,7 +222,7 @@ public class WheelView extends View {
      *
      * @return the adapter
      */
-    public WheelAdapter getAdapter() {
+    public IWheelAdapter getAdapter() {
         return adapter;
     }
 
@@ -231,7 +231,7 @@ public class WheelView extends View {
      *
      * @param adapter the new wheel adapter
      */
-    public void setAdapter(WheelAdapter adapter) {
+    public void setAdapter(IWheelAdapter adapter) {
         this.adapter = adapter;
         invalidateLayouts();
         invalidate();
@@ -557,7 +557,7 @@ public class WheelView extends View {
      * @return the max length
      */
     private int getMaxTextLength() {
-        WheelAdapter adapter = getAdapter();
+        IWheelAdapter adapter = getAdapter();
         if (adapter == null) {
             return 0;
         }
@@ -854,7 +854,7 @@ public class WheelView extends View {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        WheelAdapter adapter = getAdapter();
+        IWheelAdapter adapter = getAdapter();
         if (adapter == null) {
             return true;
         }
