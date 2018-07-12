@@ -4,17 +4,18 @@
         <shape xmlns:android="http://schemas.android.com/apk/res/android"
                android:shape="rectangle">
 
-            <corners android:topLeftRadius="@dimen/dialogui_round_corner_radius"
-                     android:topRightRadius="@dimen/dialogui_round_corner_radius"/>
-            <solid android:color="@color/dialogui_btn_pressed"/>
+            <corners android:bottomLeftRadius="@dimen/xdialog_round_corner_radius"
+                     android:bottomRightRadius="@dimen/xdialog_round_corner_radius"/>
+            <solid android:color="@color/C8"/>
 
         </shape>
     </item>
     <item>
         <shape xmlns:android="http://schemas.android.com/apk/res/android"
                android:shape="rectangle">
-            <corners android:topLeftRadius="@dimen/dialogui_round_corner_radius"
-                     android:topRightRadius="@dimen/dialogui_round_corner_radius"/>
+
+            <corners android:bottomLeftRadius="@dimen/xdialog_round_corner_radius"
+                     android:bottomRightRadius="@dimen/xdialog_round_corner_radius"/>
             <solid android:color="@android:color/white"/>
 
         </shape>

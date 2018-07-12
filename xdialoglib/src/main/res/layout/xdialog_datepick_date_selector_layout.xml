@@ -10,7 +10,7 @@
 
         <TextView
             android:id="@+id/tv_date_time_subtitle"
-            style="@style/dialogui_datepick_fontstyle_normal_blackmiddle"
+            style="@style/xdialog_datepick_fontstyle_normal_blackmiddle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -28,7 +28,7 @@
 
             <TextView
                 android:id="@+id/tv_date_time_year"
-                style="@style/dialogui_datepick_fontstyle_normal_bluemiddle"
+                style="@style/xdialog_datepick_fontstyle_normal_bluemiddle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="2014"/>
@@ -37,11 +37,11 @@
                 android:layout_width="5dp"
                 android:layout_height="1dp"
                 android:layout_gravity="center_vertical"
-                android:background="@color/datepick_surance_blue"/>
+                android:background="@color/C14"/>
 
             <TextView
                 android:id="@+id/tv_date_time_month"
-                style="@style/dialogui_datepick_fontstyle_normal_bluemiddle"
+                style="@style/xdialog_datepick_fontstyle_normal_bluemiddle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="12"/>
@@ -51,53 +51,53 @@
                 android:layout_width="5dp"
                 android:layout_height="1dp"
                 android:layout_gravity="center_vertical"
-                android:background="@color/datepick_surance_blue"/>
+                android:background="@color/C14"/>
 
             <TextView
                 android:id="@+id/tv_date_time_day"
-                style="@style/dialogui_datepick_fontstyle_normal_bluemiddle"
+                style="@style/xdialog_datepick_fontstyle_normal_bluemiddle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="20"/>
 
             <TextView
                 android:id="@+id/tv_date_time_empty"
-                style="@style/dialogui_datepick_fontstyle_normal_bluemiddle"
+                style="@style/xdialog_datepick_fontstyle_normal_bluemiddle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="  "/>
 
             <TextView
                 android:id="@+id/tv_date_time_hour"
-                style="@style/dialogui_datepick_fontstyle_normal_bluemiddle"
+                style="@style/xdialog_datepick_fontstyle_normal_bluemiddle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="20"/>
 
             <TextView
                 android:id="@+id/tv_date_time_line1"
-                style="@style/dialogui_datepick_fontstyle_normal_bluemiddle"
+                style="@style/xdialog_datepick_fontstyle_normal_bluemiddle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=":"/>
 
             <TextView
                 android:id="@+id/tv_date_time_minute"
-                style="@style/dialogui_datepick_fontstyle_normal_bluemiddle"
+                style="@style/xdialog_datepick_fontstyle_normal_bluemiddle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="18"/>
 
             <TextView
                 android:id="@+id/tv_date_time_line2"
-                style="@style/dialogui_datepick_fontstyle_normal_bluemiddle"
+                style="@style/xdialog_datepick_fontstyle_normal_bluemiddle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=":"/>
 
             <TextView
                 android:id="@+id/tv_date_time_second"
-                style="@style/dialogui_datepick_fontstyle_normal_bluemiddle"
+                style="@style/xdialog_datepick_fontstyle_normal_bluemiddle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="30"/>

@@ -9,26 +9,26 @@
         <item name="android:windowEnterAnimation">@anim/popwindow_enter1</item>
         <item name="android:windowExitAnimation">@anim/popwindow_exit1</item>
     </style>
-    <style name="dialogui_bottom_style" parent="android:Animation">
-        <item name="android:windowEnterAnimation">@anim/dialogui_enter</item>
+    <style name="xdialog_bottom_style" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/xdialog_enter</item>
         //进入时的动画
-        <item name="android:windowExitAnimation">@anim/dialogui_exit</item>
+        <item name="android:windowExitAnimation">@anim/xdialog_exit</item>
         //退出时的动画
     </style>
 
-    <style name="dialogui_center_style" parent="android:Animation">
-        <item name="android:windowEnterAnimation">@anim/dialogui_enter_center</item>
+    <style name="xdialog_center_style" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/xdialog_enter_center</item>
     </style>
 
 
     <!-- 自定义Dialog在初始化时的样式 -->
-    <style name="dialogui_datepick_dialog_untran" parent="dialogui_datepick_tran">
+    <style name="xdialog_datepick_dialog_untran" parent="xdialog_datepick_tran">
         <item name="android:backgroundDimEnabled">true</item>
     </style>
 
 
     <!-- 中浅黑色字体 -->
-    <style name="dialogui_datepick_FontStyleNormalLightBlackMiddle" parent="@android:style/TextAppearance">
+    <style name="xdialog_datepick_FontStyleNormalLightBlackMiddle" parent="@android:style/TextAppearance">
         <item name="android:textStyle">normal</item>
         <item name="android:textColor">#ff333333</item>
         <item name="android:textSize">16sp</item>
@@ -36,7 +36,7 @@
 
 
     <!-- 自定义Dialog在显示时的样式 -->
-    <style name="dialogui_datepick_tran" parent="android:style/Theme.Dialog">
+    <style name="xdialog_datepick_tran" parent="android:style/Theme.Dialog">
         <item name="android:windowFrame">@null</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowBackground">@android:color/transparent</item>
@@ -48,16 +48,16 @@
     </style>
 
     <!-- 黑色中字体 -->
-    <style name="dialogui_datepick_fontstyle_normal_blackmiddle" parent="@android:style/TextAppearance">
+    <style name="xdialog_datepick_fontstyle_normal_blackmiddle" parent="@android:style/TextAppearance">
         <item name="android:textStyle">normal</item>
         <item name="android:textColor">#000000</item>
         <item name="android:textSize">14sp</item>
     </style>
 
     <!-- 蓝色中等字体 -->
-    <style name="dialogui_datepick_fontstyle_normal_bluemiddle" parent="@android:style/TextAppearance">
+    <style name="xdialog_datepick_fontstyle_normal_bluemiddle" parent="@android:style/TextAppearance">
         <item name="android:textStyle">normal</item>
-        <item name="android:textColor">@color/datepick_surance_blue</item>
+        <item name="android:textColor">@color/C14</item>
         <item name="android:textSize">14sp</item>
     </style>
 </resources>

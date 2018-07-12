@@ -434,9 +434,9 @@ public class DialogUtils {
                 mToastTop = Toast.makeText(appContext, str, showTime);
                 LayoutInflater inflate = (LayoutInflater)
                         appContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                View view = inflate.inflate(R.layout.dialogui_toast, null);
+                View view = inflate.inflate(R.layout.xdialog_toast, null);
                 mToastTop.setView(view);
-                mToastTop.setGravity(gravity, 0, appContext.getResources().getDimensionPixelSize(R.dimen.dialogui_toast_margin));
+                mToastTop.setGravity(gravity, 0, appContext.getResources().getDimensionPixelSize(R.dimen.xdialog_toast_margin));
             }
             mToast = mToastTop;
             mToast.setText(str);
@@ -446,7 +446,7 @@ public class DialogUtils {
                 mToastCenter = Toast.makeText(appContext, str, showTime);
                 LayoutInflater inflate = (LayoutInflater)
                         appContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                View view = inflate.inflate(R.layout.dialogui_toast, null);
+                View view = inflate.inflate(R.layout.xdialog_toast, null);
                 mToastCenter.setView(view);
                 mToastCenter.setGravity(gravity, 0, 0);
             }
@@ -458,9 +458,9 @@ public class DialogUtils {
                 mToastBottom = Toast.makeText(appContext, str, showTime);
                 LayoutInflater inflate = (LayoutInflater)
                         appContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                View view = inflate.inflate(R.layout.dialogui_toast, null);
+                View view = inflate.inflate(R.layout.xdialog_toast, null);
                 mToastBottom.setView(view);
-                mToastBottom.setGravity(gravity, 0, appContext.getResources().getDimensionPixelSize(R.dimen.dialogui_toast_margin));
+                mToastBottom.setGravity(gravity, 0, appContext.getResources().getDimensionPixelSize(R.dimen.xdialog_toast_margin));
             }
             mToast = mToastBottom;
             mToast.setText(str);

@@ -31,7 +31,7 @@ public class SheetHolder extends SuperHolder {
 
     @Override
     protected void findViews() {
-        tvTitle = (TextView) rootView.findViewById(R.id.dialogui_tv_title);
+        tvTitle = (TextView) rootView.findViewById(R.id.xdialog_tv_title);
         rView = (RecyclerView) rootView.findViewById(R.id.rlv);
         btnBottom = (Button) rootView.findViewById(R.id.btn_bottom);
 
@@ -39,7 +39,7 @@ public class SheetHolder extends SuperHolder {
 
     @Override
     protected int setLayoutRes() {
-        return R.layout.dialogui_holder_sheet;
+        return R.layout.xdialog_holder_sheet;
     }
 
     @Override

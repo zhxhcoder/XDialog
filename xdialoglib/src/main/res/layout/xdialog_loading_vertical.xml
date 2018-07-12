@@ -5,11 +5,11 @@
                 android:orientation="vertical">
 
     <LinearLayout
-        android:id="@+id/dialogui_ll_bg"
+        android:id="@+id/xdialog_ll_bg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:background="@drawable/dialogui_shape_wihte_round_corner"
+        android:background="@drawable/xdialog_shape_wihte_round_corner"
         android:gravity="center"
         android:minHeight="120dp"
         android:minWidth="120dp"
@@ -20,11 +20,11 @@
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_gravity="center_horizontal"
-            android:indeterminateDrawable="@drawable/dialogui_rotate_mum_light"
+            android:indeterminateDrawable="@drawable/xdialog_rotate_mum_light"
             android:indeterminateDuration="1200"/>
 
         <TextView
-            android:id="@+id/dialogui_tv_msg"
+            android:id="@+id/xdialog_tv_msg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -36,7 +36,7 @@
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:text="加载中..."
-            android:textColor="@color/text_black"/>
+            android:textColor="@color/C3"/>
 
     </LinearLayout>
 

@@ -7,22 +7,22 @@ import com.zhxh.xdialoglib.R;
 public class DialogConfig {
 
     @ColorRes
-    public static int iosBtnColor = R.color.ios_btntext_blue;
+    public static int iosBtnColor = R.color.C12;
     @ColorRes
-    public static int lvItemTxtColor = R.color.text_item_33;
+    public static int lvItemTxtColor = R.color.C3;
     @ColorRes
-    public static int mdBtnColor = R.color.btn_alert;
+    public static int mdBtnColor = R.color.C2;
     @ColorRes
-    public static int titleTxtColor = R.color.text_title_11;
+    public static int titleTxtColor = R.color.C0;
     @ColorRes
-    public static int msgTxtColor = R.color.text_title_11;
+    public static int msgTxtColor = R.color.C0;
     @ColorRes
-    public static int inputTxtColor = R.color.text_input_44;
+    public static int inputTxtColor = R.color.C4;
 
 
-    public static CharSequence dialogui_btnTxt1 = "确定";
-    public static CharSequence dialogui_btnTxt2 = "取消";
-    public static CharSequence dialogui_bottomTxt = "取消";
+    public static CharSequence xdialog_btnTxt1 = "确定";
+    public static CharSequence xdialog_btnTxt2 = "取消";
+    public static CharSequence xdialog_bottomTxt = "取消";
 
 
     public static final int TYPE_LOADING = 1;

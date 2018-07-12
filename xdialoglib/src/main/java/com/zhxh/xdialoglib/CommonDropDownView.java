@@ -79,7 +79,7 @@ public class CommonDropDownView {
 
     private void createAutoDialog() {
 
-        selectColor = context.getResources().getColor(R.color.hot_red);
+        selectColor = context.getResources().getColor(R.color.C16);
         if (viewType == 1) {
             selectColor = context.getResources().getColor(R.color.C13);
         }
@@ -131,7 +131,7 @@ public class CommonDropDownView {
             if (j == tempIndex) {
                 textView.setTextColor(selectColor);
             } else {
-                textView.setTextColor(context.getResources().getColor(R.color.color_white));
+                textView.setTextColor(context.getResources().getColor(R.color.C9));
             }
 
             LinearLayout.LayoutParams textViewParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
@@ -270,7 +270,7 @@ public class CommonDropDownView {
 
                 if (view instanceof TextView) {
 
-                    ((TextView) view).setTextColor(context.getResources().getColor(R.color.color_white));
+                    ((TextView) view).setTextColor(context.getResources().getColor(R.color.C9));
                 }
             }
 

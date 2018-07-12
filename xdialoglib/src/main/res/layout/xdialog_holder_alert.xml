@@ -2,12 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:background="@drawable/dialogui_shape_wihte_round_corner"
+              android:background="@drawable/xdialog_shape_wihte_round_corner"
               android:gravity="center_horizontal"
               android:orientation="vertical">
 
     <TextView
-        android:id="@+id/dialogui_tv_title"
+        android:id="@+id/xdialog_tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ellipsize="end"
@@ -17,8 +17,8 @@
         android:paddingRight="40dp"
         android:paddingTop="12dp"
         android:text=""
-        android:textColor="@color/text_title_11"
-        android:textSize="@dimen/dialogui_title_txt_size"
+        android:textColor="@color/C0"
+        android:textSize="@dimen/xdialog_title_txt_size"
         android:textStyle="bold"/>
 
 
@@ -29,7 +29,7 @@
         android:paddingTop="12dp">
 
         <TextView
-            android:id="@+id/dialogui_tv_msg"
+            android:id="@+id/xdialog_tv_msg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -39,8 +39,8 @@
             android:paddingRight="30dp"
             android:paddingTop="5dp"
             android:text=""
-            android:textColor="@color/text_msg_33"
-            android:textSize="@dimen/dialogui_msg_txt_size"/>
+            android:textColor="@color/C3"
+            android:textSize="@dimen/xdialog_msg_txt_size"/>
 
         <EditText
             android:id="@+id/et_1"
@@ -50,14 +50,14 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="5dp"
-            android:background="@drawable/dialogui_shape_et_bg"
+            android:background="@drawable/xdialog_shape_et_bg"
             android:cursorVisible="true"
             android:maxLines="1"
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
-            android:textColor="@color/text_input_44"
-            android:textCursorDrawable="@drawable/dialogui_shape_et_cursor"
-            android:textSize="@dimen/dialogui_input_txt_size"/>
+            android:textColor="@color/C4"
+            android:textCursorDrawable="@drawable/xdialog_shape_et_cursor"
+            android:textSize="@dimen/xdialog_input_txt_size"/>
 
         <EditText
             android:id="@+id/et_2"
@@ -66,14 +66,14 @@
             android:layout_marginBottom="15dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:background="@drawable/dialogui_shape_et_bg"
+            android:background="@drawable/xdialog_shape_et_bg"
             android:cursorVisible="true"
             android:maxLines="1"
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
-            android:textColor="@color/text_input_44"
-            android:textCursorDrawable="@drawable/dialogui_shape_et_cursor"
-            android:textSize="@dimen/dialogui_input_txt_size"/>
+            android:textColor="@color/C4"
+            android:textCursorDrawable="@drawable/xdialog_shape_et_cursor"
+            android:textSize="@dimen/xdialog_input_txt_size"/>
 
 
     </LinearLayout>
@@ -82,7 +82,7 @@
         android:id="@+id/line"
         android:layout_width="match_parent"
         android:layout_height="1px"
-        android:background="@color/line_dd"/>
+        android:background="@color/C7"/>
 
     <LinearLayout
         android:id="@+id/ll_container_horizontal"
@@ -97,18 +97,18 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:background="@drawable/dialogui_selector_left_bottom"
+            android:background="@drawable/xdialog_selector_left_bottom"
             android:gravity="center"
             android:padding="5dp"
             android:text="1"
-            android:textColor="@color/ios_btntext_blue"
-            android:textSize="@dimen/dialogui_btn_txt_size"/>
+            android:textColor="@color/C12"
+            android:textSize="@dimen/xdialog_btn_txt_size"/>
 
         <View
             android:id="@+id/line_btn2"
             android:layout_width="1px"
             android:layout_height="match_parent"
-            android:background="@color/line_dd"/>
+            android:background="@color/C7"/>
 
         <Button
             android:id="@+id/btn_2"
@@ -116,19 +116,19 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:background="@drawable/dialogui_selector_all_no"
+            android:background="@drawable/xdialog_selector_all_no"
             android:gravity="center"
             android:minHeight="48dp"
             android:padding="5dp"
             android:text="2"
-            android:textColor="@color/ios_btntext_blue"
-            android:textSize="@dimen/dialogui_btn_txt_size"/>
+            android:textColor="@color/C12"
+            android:textSize="@dimen/xdialog_btn_txt_size"/>
 
         <View
             android:id="@+id/line_btn3"
             android:layout_width="1px"
             android:layout_height="match_parent"
-            android:background="@color/line_dd"/>
+            android:background="@color/C7"/>
 
         <Button
             android:id="@+id/btn_3"
@@ -136,13 +136,13 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:background="@drawable/dialogui_selector_right_bottom"
+            android:background="@drawable/xdialog_selector_right_bottom"
             android:gravity="center"
             android:minHeight="48dp"
             android:padding="5dp"
             android:text="3"
-            android:textColor="@color/ios_btntext_blue"
-            android:textSize="@dimen/dialogui_btn_txt_size"/>
+            android:textColor="@color/C12"
+            android:textSize="@dimen/xdialog_btn_txt_size"/>
 
 
     </LinearLayout>
@@ -160,54 +160,54 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="@drawable/dialogui_selector_all_no"
+            android:background="@drawable/xdialog_selector_all_no"
             android:gravity="center"
             android:minHeight="48dp"
             android:padding="5dp"
 
             android:text="1"
-            android:textColor="@color/ios_btntext_blue"
-            android:textSize="@dimen/dialogui_btn_txt_size"/>
+            android:textColor="@color/C12"
+            android:textSize="@dimen/xdialog_btn_txt_size"/>
 
         <View
             android:id="@+id/line_btn2_vertical"
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:background="@color/line_dd"/>
+            android:background="@color/C7"/>
 
         <Button
             android:id="@+id/btn_2_vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="@drawable/dialogui_selector_all_no"
+            android:background="@drawable/xdialog_selector_all_no"
             android:gravity="center"
             android:minHeight="48dp"
 
             android:padding="5dp"
             android:text="2"
-            android:textColor="@color/ios_btntext_blue"
-            android:textSize="@dimen/dialogui_btn_txt_size"/>
+            android:textColor="@color/C12"
+            android:textSize="@dimen/xdialog_btn_txt_size"/>
 
         <View
             android:id="@+id/line_btn3_vertical"
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:background="@color/line_dd"/>
+            android:background="@color/C7"/>
 
         <Button
             android:id="@+id/btn_3_vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="@drawable/dialogui_selector_all_bottom"
+            android:background="@drawable/xdialog_selector_all_bottom"
             android:gravity="center"
             android:minHeight="48dp"
             android:padding="5dp"
 
             android:text="3"
-            android:textColor="@color/ios_btntext_blue"
-            android:textSize="@dimen/dialogui_btn_txt_size"/>
+            android:textColor="@color/C12"
+            android:textSize="@dimen/xdialog_btn_txt_size"/>
 
 
     </LinearLayout>

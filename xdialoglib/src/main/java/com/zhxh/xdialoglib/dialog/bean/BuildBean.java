@@ -40,10 +40,10 @@ public class BuildBean extends Buildable implements Styleable {
 
     public CharSequence title;
     public CharSequence msg;
-    public CharSequence text1 = DialogConfig.dialogui_btnTxt1;
-    public CharSequence text2 = DialogConfig.dialogui_btnTxt2;
+    public CharSequence text1 = DialogConfig.xdialog_btnTxt1;
+    public CharSequence text2 = DialogConfig.xdialog_btnTxt2;
     public CharSequence text3;
-    public CharSequence bottomTxt = DialogConfig.dialogui_bottomTxt;
+    public CharSequence bottomTxt = DialogConfig.xdialog_bottomTxt;
 
     public CharSequence hint1;
     public CharSequence hint2;

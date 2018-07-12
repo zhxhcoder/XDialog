@@ -28,7 +28,7 @@ public class TieAdapter extends SuperAdapter<TieBean> {
     @Override
     public SuperItemHolder getItemHolder(ViewGroup parent, int viewType) {
         return new TieItemHolder(mContext, mListener, LayoutInflater.from(mContext).
-                inflate(R.layout.dialogui_holder_item_tie, parent, false));
+                inflate(R.layout.xdialog_holder_item_tie, parent, false));
     }
 
     /**

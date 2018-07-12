@@ -31,7 +31,7 @@ public class PopupWindowView implements AdapterView.OnItemClickListener {
     public PopupWindowView(Context mContext, int widthGravity) {
         this.mContext = mContext;
         LayoutInflater inflater = LayoutInflater.from(mContext);
-        viewItem = inflater.inflate(R.layout.dialogui_popu_options, null);
+        viewItem = inflater.inflate(R.layout.xdialog_popu_options, null);
         pupoListView = (ListView) viewItem.findViewById(R.id.customui_list);
         mPopuWindowAdapter = new PopWindowAdapter(mContext, popuLists);
         pupoListView.setAdapter(mPopuWindowAdapter);

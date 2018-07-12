@@ -56,7 +56,7 @@ public class PopWindowAdapter extends BaseAdapter {
         if (convertView == null) {
 
             holder = new ViewHolder();
-            convertView = inflater.inflate(R.layout.dialogui_popu_option_item, null);
+            convertView = inflater.inflate(R.layout.xdialog_popu_option_item, null);
 
             holder.textView = (TextView) convertView
                     .findViewById(R.id.customui_item_text);

@@ -8,6 +8,6 @@
     <bitmap
         android:antialias="true"
         android:filter="true"
-        android:src="@drawable/dialogui_spinner_mum_light"/>
+        android:src="@drawable/xdialog_spinner_mum"/>
 
 </rotate>

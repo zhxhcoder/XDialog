@@ -27,13 +27,13 @@ public class TieItemHolder extends SuperItemHolder<TieBean> {
          * 1top 2midle 3bottom 4all
          */
         if (itemPositionType == 1) {
-            llTie.setBackgroundResource(R.drawable.dialogui_selector_all_top);
+            llTie.setBackgroundResource(R.drawable.xdialog_selector_all_top);
         } else if (itemPositionType == 3) {
-            llTie.setBackgroundResource(R.drawable.dialogui_selector_all_bottom);
+            llTie.setBackgroundResource(R.drawable.xdialog_selector_all_bottom);
         } else if (itemPositionType == 4) {
-            llTie.setBackgroundResource(R.drawable.dialogui_selector_all);
+            llTie.setBackgroundResource(R.drawable.xdialog_selector_all);
         } else {
-            llTie.setBackgroundResource(R.drawable.dialogui_selector_all_no);
+            llTie.setBackgroundResource(R.drawable.xdialog_selector_all_no);
         }
         TieBean data = getData();
         tvTitle.setText("" + data.getTitle());

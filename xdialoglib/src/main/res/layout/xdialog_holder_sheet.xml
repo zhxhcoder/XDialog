@@ -5,7 +5,7 @@
               android:orientation="vertical">
 
     <TextView
-        android:id="@+id/dialogui_tv_title"
+        android:id="@+id/xdialog_tv_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingBottom="10dp"
@@ -13,14 +13,14 @@
         android:paddingRight="16dp"
         android:paddingTop="10dp"
         android:text="标题"
-        android:textColor="@color/text_black"
+        android:textColor="@color/C3"
         android:textSize="15sp"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rlv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/dialogui_shape_wihte_round_corner"
+        android:background="@drawable/xdialog_shape_wihte_round_corner"
         android:overScrollFooter="@android:color/transparent"
         android:overScrollHeader="@android:color/transparent"
         android:overScrollMode="never"
@@ -32,9 +32,9 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
-        android:background="@drawable/dialogui_selector_all"
+        android:background="@drawable/xdialog_selector_all"
         android:text="取消"
-        android:textColor="@color/ios_btntext_blue"
-        android:textSize="@dimen/dialogui_btn_txt_size"/>
+        android:textColor="@color/C12"
+        android:textSize="@dimen/xdialog_btn_txt_size"/>
 
 </LinearLayout>

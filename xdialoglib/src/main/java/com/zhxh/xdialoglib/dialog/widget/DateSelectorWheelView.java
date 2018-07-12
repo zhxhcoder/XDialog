@@ -110,7 +110,7 @@ public class DateSelectorWheelView extends RelativeLayout implements
     }
 
     private void initLayout(Context context) {
-        LayoutInflater.from(context).inflate(R.layout.dialogui_datepick_date_selector_layout, this,
+        LayoutInflater.from(context).inflate(R.layout.xdialog_datepick_date_selector_layout, this,
                 true);
         rlTitle = (RelativeLayout) findViewById(R.id.rl_date_time_title);
         lineL = findViewById(R.id.line_1);

@@ -12,7 +12,7 @@ public class DialogUIDividerItemDecoration extends RecyclerView.ItemDecoration {
     private Drawable mDivider;
 
     public DialogUIDividerItemDecoration(Context context) {
-        mDivider = context.getResources().getDrawable(R.drawable.dialogui_live_divider);
+        mDivider = context.getResources().getDrawable(R.drawable.xdialog_live_divider);
     }
 
     @Override

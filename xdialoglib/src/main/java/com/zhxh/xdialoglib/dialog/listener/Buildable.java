@@ -76,7 +76,7 @@ public class Buildable {
 
     private BuildBean buildDatePick(final BuildBean bean) {
         AlertDialog.Builder builder = new AlertDialog.Builder(bean.mContext);
-        View root = View.inflate(bean.mContext, R.layout.dialogui_datepick_layout, null);
+        View root = View.inflate(bean.mContext, R.layout.xdialog_datepick_layout, null);
 
         RelativeLayout rl_title_panel = (RelativeLayout) root
                 .findViewById(R.id.rl_title_panel);
@@ -143,21 +143,21 @@ public class Buildable {
         AlertDialog.Builder builder = new AlertDialog.Builder(bean.mContext);
         View root;
         if (bean.isVertical) {
-            root = View.inflate(bean.mContext, R.layout.dialogui_loading_vertical, null);
+            root = View.inflate(bean.mContext, R.layout.xdialog_loading_vertical, null);
         } else {
-            root = View.inflate(bean.mContext, R.layout.dialogui_loading_horizontal, null);
+            root = View.inflate(bean.mContext, R.layout.xdialog_loading_horizontal, null);
         }
-        View llBg = (View) root.findViewById(R.id.dialogui_ll_bg);
+        View llBg = (View) root.findViewById(R.id.xdialog_ll_bg);
         ProgressBar pbBg = (ProgressBar) root.findViewById(R.id.pb_bg);
-        TextView tvMsg = (TextView) root.findViewById(R.id.dialogui_tv_msg);
+        TextView tvMsg = (TextView) root.findViewById(R.id.xdialog_tv_msg);
         tvMsg.setText(bean.msg);
         if (bean.isWhiteBg) {
-            llBg.setBackgroundResource(R.drawable.dialogui_shape_wihte_round_corner);
-            pbBg.setIndeterminateDrawable(bean.mContext.getResources().getDrawable(R.drawable.dialogui_rotate_mum));
-            tvMsg.setTextColor(bean.mContext.getResources().getColor(R.color.text_black));
+            llBg.setBackgroundResource(R.drawable.xdialog_shape_wihte_round_corner);
+            pbBg.setIndeterminateDrawable(bean.mContext.getResources().getDrawable(R.drawable.xdialog_rotate_mum));
+            tvMsg.setTextColor(bean.mContext.getResources().getColor(R.color.C3));
         } else {
-            llBg.setBackgroundResource(R.drawable.dialogui_shape_gray_round_corner);
-            pbBg.setIndeterminateDrawable(bean.mContext.getResources().getDrawable(R.drawable.dialogui_rotate_mum_light));
+            llBg.setBackgroundResource(R.drawable.xdialog_shape_gray_round_corner);
+            pbBg.setIndeterminateDrawable(bean.mContext.getResources().getDrawable(R.drawable.xdialog_rotate_mum_light));
             tvMsg.setTextColor(Color.WHITE);
         }
         builder.setView(root);
@@ -172,21 +172,21 @@ public class Buildable {
         bean.dialog = dialog;
         View root;
         if (bean.isVertical) {
-            root = View.inflate(bean.mContext, R.layout.dialogui_loading_vertical, null);
+            root = View.inflate(bean.mContext, R.layout.xdialog_loading_vertical, null);
         } else {
-            root = View.inflate(bean.mContext, R.layout.dialogui_loading_horizontal, null);
+            root = View.inflate(bean.mContext, R.layout.xdialog_loading_horizontal, null);
         }
-        View llBg = (View) root.findViewById(R.id.dialogui_ll_bg);
+        View llBg = (View) root.findViewById(R.id.xdialog_ll_bg);
         ProgressBar pbBg = (ProgressBar) root.findViewById(R.id.pb_bg);
-        TextView tvMsg = (TextView) root.findViewById(R.id.dialogui_tv_msg);
+        TextView tvMsg = (TextView) root.findViewById(R.id.xdialog_tv_msg);
         tvMsg.setText(bean.msg);
         if (bean.isWhiteBg) {
-            llBg.setBackgroundResource(R.drawable.dialogui_shape_wihte_round_corner);
-            pbBg.setIndeterminateDrawable(bean.mContext.getResources().getDrawable(R.drawable.dialogui_rotate_mum));
-            tvMsg.setTextColor(bean.mContext.getResources().getColor(R.color.text_black));
+            llBg.setBackgroundResource(R.drawable.xdialog_shape_wihte_round_corner);
+            pbBg.setIndeterminateDrawable(bean.mContext.getResources().getDrawable(R.drawable.xdialog_rotate_mum));
+            tvMsg.setTextColor(bean.mContext.getResources().getColor(R.color.C3));
         } else {
-            llBg.setBackgroundResource(R.drawable.dialogui_shape_gray_round_corner);
-            pbBg.setIndeterminateDrawable(bean.mContext.getResources().getDrawable(R.drawable.dialogui_rotate_mum_light));
+            llBg.setBackgroundResource(R.drawable.xdialog_shape_gray_round_corner);
+            pbBg.setIndeterminateDrawable(bean.mContext.getResources().getDrawable(R.drawable.xdialog_rotate_mum_light));
             tvMsg.setTextColor(Color.WHITE);
         }
         bean.dialog.setContentView(root);

@@ -17,7 +17,7 @@
             android:id="@+id/tv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/color_text_black"
+            android:textColor="@color/C10"
             android:text=""/>
     </LinearLayout>
 

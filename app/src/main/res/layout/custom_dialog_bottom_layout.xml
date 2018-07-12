@@ -2,11 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/dialogui_shape_wihte_round_corner"
+    android:background="@drawable/xdialog_shape_wihte_round_corner"
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/dialogui_tv_title"
+        android:id="@+id/xdialog_tv_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"

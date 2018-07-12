@@ -466,7 +466,7 @@ public class WheelView extends View {
         }
 
         if (centerDrawable == null) {
-            centerDrawable = getContext().getResources().getDrawable(R.drawable.dialogui_wheel_val);
+            centerDrawable = getContext().getResources().getDrawable(R.drawable.xdialog_wheel_val);
         }
 
         if (topShadow == null) {

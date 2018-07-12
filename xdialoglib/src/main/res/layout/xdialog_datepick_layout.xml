@@ -9,7 +9,7 @@
     <RelativeLayout
         android:id="@+id/rl_title_panel"
         android:layout_width="match_parent"
-        android:background="@drawable/dialogui_datepick_top_left_right_coner"
+        android:background="@drawable/xdialog_datepick_top_left_right_coner"
         android:layout_height="48dp">
 
         <FrameLayout
@@ -41,7 +41,7 @@
 
         <TextView
             android:id="@+id/tv_title"
-            style="@style/dialogui_datepick_FontStyleNormalLightBlackMiddle"
+            style="@style/xdialog_datepick_FontStyleNormalLightBlackMiddle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
