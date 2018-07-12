@@ -23,7 +23,6 @@ import com.zhxh.xdialoglib.dialog.widget.PopupWindowView;
 
 import java.util.List;
 
-
 public class DialogUtils {
     /**
      * 全局上下文

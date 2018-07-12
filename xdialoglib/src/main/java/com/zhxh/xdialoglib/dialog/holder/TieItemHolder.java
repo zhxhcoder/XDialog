@@ -12,7 +12,6 @@ import com.zhxh.xdialoglib.dialog.listener.OnItemClickListener;
 
 public class TieItemHolder extends SuperItemHolder<TieBean> {
 
-
     LinearLayout llTie;
     TextView tvTitle;
 

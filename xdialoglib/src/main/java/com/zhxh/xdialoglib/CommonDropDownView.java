@@ -12,7 +12,6 @@ import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
-
 /**
  * Created by zhxh on 2018/6/29
  */

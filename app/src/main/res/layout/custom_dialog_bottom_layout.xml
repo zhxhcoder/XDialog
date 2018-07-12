@@ -13,7 +13,7 @@
         android:padding="10dp"
         android:text="哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或我知道该说些什么哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或我知道该说些什么"
         android:textColor="#111111"
-        android:textSize="17sp"/>
+        android:textSize="17sp" />
 
 
 </LinearLayout>

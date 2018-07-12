@@ -1,6 +1,5 @@
 package com.zhxh.xdialoglib.dialog.listener;
 
-
 import com.zhxh.xdialoglib.dialog.widget.WheelView;
 
 public interface OnWheelScrollListener {

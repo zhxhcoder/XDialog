@@ -3,13 +3,13 @@ package com.zhxh.xdialoglib.dialog.listener;
 import java.util.List;
 
 public interface RefreshableListener {
-    public void refresh(List newData);
+    void refresh(List newData);
 
-    public void addAll(List newData);
+    void addAll(List newData);
 
-    public void clear();
+    void clear();
 
-    public void delete(int position);
+    void delete(int position);
 
-    public void add(Object object);
+    void add(Object object);
 }

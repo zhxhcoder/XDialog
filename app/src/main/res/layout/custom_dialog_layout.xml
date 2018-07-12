@@ -13,14 +13,14 @@
         android:padding="10dp"
         android:text="哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或我知道该说些什么哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或我知道该说些什么哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或我知道该说些什么哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或我知道该说些什么"
         android:textColor="#111111"
-        android:textSize="17sp"/>
+        android:textSize="17sp" />
 
     <Button
         android:id="@+id/btn_ok"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="确定"/>
+        android:text="确定" />
 
 
 </LinearLayout>
