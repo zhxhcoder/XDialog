@@ -2,9 +2,6 @@ package com.zhxh.xdialoglib.dialog.listener;
 
 import java.util.List;
 
-/**
- * Created by Administrator on 2016/5/10 0010.
- */
 public interface RefreshableListener {
     public void refresh(List newData);
 

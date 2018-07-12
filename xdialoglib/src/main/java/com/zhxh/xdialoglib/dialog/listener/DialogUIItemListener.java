@@ -1,8 +1,5 @@
 package com.zhxh.xdialoglib.dialog.listener;
 
-/**
- * Created by Administrator on 2016/7/24.
- */
 public abstract class DialogUIItemListener {
 
     /**

@@ -16,7 +16,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.zhxh.xdialoglib.DialogUtils;
-import com.zhxh.xdialoglib.dialog.R;
+import com.zhxh.xdialoglib.R;
 import com.zhxh.xdialoglib.dialog.bean.BuildBean;
 import com.zhxh.xdialoglib.dialog.config.DialogConfig;
 import com.zhxh.xdialoglib.dialog.holder.AlertDialogHolder;

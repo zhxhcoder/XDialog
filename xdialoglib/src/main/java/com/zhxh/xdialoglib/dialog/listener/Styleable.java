@@ -8,9 +8,6 @@ import com.zhxh.xdialoglib.dialog.bean.BuildBean;
 
 import java.util.Map;
 
-/**
- * Created by Administrator on 2016/10/10.
- */
 public interface Styleable {
 
     BuildBean setBtnColor(@ColorRes int btn1Color, @ColorRes int btn2Color, @ColorRes int btn3Color);

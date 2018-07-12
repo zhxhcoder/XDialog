@@ -3,18 +3,18 @@ package com.zhxh.xdialoglib.dialog.listener;
 import android.view.View;
 import android.widget.AdapterView;
 
-import com.zhxh.xdialoglib.dialog.bean.PopuBean;
+import com.zhxh.xdialoglib.dialog.bean.PopBean;
 
 import java.util.List;
 
 /**
- * 动态设置下拉框的数据
+ * 设置动态下拉框的数据
  */
 public interface TdataListener {
     /**
      * 初始化数据
      */
-    void initPupoData(List<PopuBean> lists);
+    void initPopData(List<PopBean> lists);
 
     /**
      * 点击事件

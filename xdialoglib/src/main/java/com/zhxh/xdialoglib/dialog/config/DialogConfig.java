@@ -2,28 +2,8 @@ package com.zhxh.xdialoglib.dialog.config;
 
 import android.support.annotation.ColorRes;
 
-import com.zhxh.xdialoglib.dialog.R;
+import com.zhxh.xdialoglib.R;
 
-/**
- * ========================================
- * <p/>
- * 版 权：dou361.com 版权所有 （C） 2015
- * <p/>
- * 作 者：陈冠明
- * <p/>
- * 个人网站：http://www.dou361.com
- * <p/>
- * 版 本：1.0
- * <p/>
- * 创建日期：2016/11/1 15:13
- * <p/>
- * 描 述：公共配置
- * <p/>
- * <p/>
- * 修订历史：
- * <p/>
- * ========================================
- */
 public class DialogConfig {
 
     @ColorRes

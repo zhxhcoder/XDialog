@@ -9,9 +9,9 @@ import android.widget.LinearLayout.LayoutParams;
 import android.widget.ListView;
 import android.widget.PopupWindow;
 
-import com.zhxh.xdialoglib.dialog.R;
-import com.zhxh.xdialoglib.dialog.adapter.PopuWindowAdapter;
-import com.zhxh.xdialoglib.dialog.bean.PopuBean;
+import com.zhxh.xdialoglib.R;
+import com.zhxh.xdialoglib.dialog.adapter.PopWindowAdapter;
+import com.zhxh.xdialoglib.dialog.bean.PopBean;
 import com.zhxh.xdialoglib.dialog.listener.TdataListener;
 
 import java.util.ArrayList;
@@ -42,8 +42,8 @@ public class PopuWindowView implements AdapterView.OnItemClickListener {
     View viewItem = null;
     ListView pupoListView;
     PopupWindow pullDownView;// 弹出窗口
-    private List<PopuBean> popuLists = new ArrayList<PopuBean>();
-    private PopuWindowAdapter mPopuWindowAdapter;
+    private List<PopBean> popuLists = new ArrayList<PopBean>();
+    private PopWindowAdapter mPopuWindowAdapter;
     private Context mContext;
     private TdataListener mTdataListener;
     private int maxLine = 5;
@@ -53,7 +53,7 @@ public class PopuWindowView implements AdapterView.OnItemClickListener {
         LayoutInflater inflater = LayoutInflater.from(mContext);
         viewItem = inflater.inflate(R.layout.dialogui_popu_options, null);
         pupoListView = (ListView) viewItem.findViewById(R.id.customui_list);
-        mPopuWindowAdapter = new PopuWindowAdapter(mContext, popuLists);
+        mPopuWindowAdapter = new PopWindowAdapter(mContext, popuLists);
         pupoListView.setAdapter(mPopuWindowAdapter);
         pullDownView = new PopupWindow(viewItem, widthGravity,
                 LayoutParams.WRAP_CONTENT, true);
@@ -68,7 +68,7 @@ public class PopuWindowView implements AdapterView.OnItemClickListener {
     public void initPupoData(TdataListener tdataListener) {
         mTdataListener = tdataListener;
         if (mTdataListener != null) {
-            mTdataListener.initPupoData(popuLists);
+            mTdataListener.initPopData(popuLists);
         }
         if (popuLists != null && popuLists.size() > maxLine) {
             pullDownView.setHeight(dip2px(maxLine * 40));

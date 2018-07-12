@@ -8,13 +8,13 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.zhxh.xdialoglib.R;
-import com.zhxh.xdialoglib.dialog.bean.PopuBean;
+import com.zhxh.xdialoglib.dialog.bean.PopBean;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class PopuWindowAdapter extends BaseAdapter {
+public class PopWindowAdapter extends BaseAdapter {
 
     /**
      * 上下文
@@ -23,14 +23,14 @@ public class PopuWindowAdapter extends BaseAdapter {
     /**
      * 供下拉的集合包括id
      */
-    List<PopuBean> list;
+    List<PopBean> list;
     private LayoutInflater inflater;
 
-    public PopuWindowAdapter(Context mContext, List<PopuBean> lists) {
+    public PopWindowAdapter(Context mContext, List<PopBean> lists) {
         this.mContext = mContext;
         this.list = lists;
         if (list == null) {
-            list = new ArrayList<PopuBean>();
+            list = new ArrayList<PopBean>();
         }
         inflater = LayoutInflater.from(mContext);
     }

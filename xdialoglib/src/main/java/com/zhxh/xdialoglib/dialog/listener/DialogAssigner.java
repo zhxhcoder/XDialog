@@ -11,9 +11,6 @@ import com.zhxh.xdialoglib.dialog.config.DialogConfig;
 
 import java.util.List;
 
-/**
- * Created by Administrator on 2016/10/9 0009.
- */
 public class DialogAssigner implements Assignable {
 
     private static DialogAssigner instance;

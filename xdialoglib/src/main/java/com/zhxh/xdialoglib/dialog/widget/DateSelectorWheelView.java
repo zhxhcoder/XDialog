@@ -11,33 +11,13 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.zhxh.xdialoglib.dialog.R;
+import com.zhxh.xdialoglib.R;
 import com.zhxh.xdialoglib.dialog.adapter.StrericWheelAdapter;
 import com.zhxh.xdialoglib.dialog.listener.OnWheelChangedListener;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/**
- * ========================================
- * <p>
- * 版 权：dou361.com 版权所有 （C） 2015
- * <p>
- * 作 者：陈冠明
- * <p>
- * 个人网站：http://www.dou361.com
- * <p>
- * 版 本：1.0
- * <p>
- * 创建日期：2016/3/16 10:39
- * <p>
- * 描 述：
- * <p>
- * <p>
- * 修订历史：
- * <p>
- * ========================================
- */
 public class DateSelectorWheelView extends RelativeLayout implements
         OnWheelChangedListener {
     private final String flag = this.getClass().getSimpleName();

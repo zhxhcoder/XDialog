@@ -16,7 +16,7 @@ import android.widget.LinearLayout;
 import com.zhxh.xdialoglib.DialogUtils;
 import com.zhxh.xdialoglib.dialog.adapter.TieAdapter;
 import com.zhxh.xdialoglib.dialog.bean.BuildBean;
-import com.zhxh.xdialoglib.dialog.bean.PopuBean;
+import com.zhxh.xdialoglib.dialog.bean.PopBean;
 import com.zhxh.xdialoglib.dialog.bean.TieBean;
 import com.zhxh.xdialoglib.dialog.listener.DialogUIDateTimeSaveListener;
 import com.zhxh.xdialoglib.dialog.listener.DialogUIItemListener;
@@ -63,9 +63,9 @@ public class DialogActivity extends AppCompatActivity {
             case R.id.btn_popu:
                 DialogUtils.showPopuWindow(mContext, LinearLayout.LayoutParams.MATCH_PARENT, 4, btnPopu, new TdataListener() {
                     @Override
-                    public void initPupoData(List<PopuBean> lists) {
+                    public void initPopData(List<PopBean> lists) {
                         for (int i = 0; i < 5; i++) {
-                            PopuBean popu = new PopuBean();
+                            PopBean popu = new PopBean();
                             popu.setTitle("item" + i);
                             popu.setId(i);
                             lists.add(popu);

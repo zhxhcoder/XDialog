@@ -11,32 +11,12 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.zhxh.xdialoglib.DialogUtils;
-import com.zhxh.xdialoglib.dialog.R;
+import com.zhxh.xdialoglib.R;
 import com.zhxh.xdialoglib.dialog.adapter.TieAdapter;
 import com.zhxh.xdialoglib.dialog.bean.BuildBean;
 import com.zhxh.xdialoglib.dialog.listener.OnItemClickListener;
 import com.zhxh.xdialoglib.dialog.widget.DialogUIDividerItemDecoration;
 
-/**
- * ========================================
- * <p/>
- * 版 权：dou361.com 版权所有 （C） 2015
- * <p/>
- * 作 者：陈冠明
- * <p/>
- * 个人网站：http://www.dou361.com
- * <p/>
- * 版 本：1.0
- * <p/>
- * 创建日期：2016/11/25 16:54
- * <p/>
- * 描 述：列表holder
- * <p/>
- * <p/>
- * 修订历史：
- * <p/>
- * ========================================
- */
 public class SheetHolder extends SuperHolder {
 
     private TextView tvTitle;

@@ -41,7 +41,7 @@ import android.view.View;
 import android.view.animation.Interpolator;
 import android.widget.Scroller;
 
-import com.zhxh.xdialoglib.dialog.R;
+import com.zhxh.xdialoglib.R;
 import com.zhxh.xdialoglib.dialog.adapter.WheelAdapter;
 import com.zhxh.xdialoglib.dialog.listener.OnWheelChangedListener;
 import com.zhxh.xdialoglib.dialog.listener.OnWheelScrollListener;

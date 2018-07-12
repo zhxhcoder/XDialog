@@ -17,15 +17,11 @@ import com.zhxh.xdialoglib.DialogUtils;
 import com.zhxh.xdialoglib.dialog.bean.BuildBean;
 import com.zhxh.xdialoglib.dialog.config.DialogConfig;
 
-/**
- * Created by Administrator on 2016/10/9 0009.
- */
 public class ToolUtils {
 
     /**
      * 统一显示
-     * 解决badtoken问题,一劳永逸
-     *
+     * 解决解决BadTokenException问题
      * @param dialog
      */
     public static void showDialog(Dialog dialog) {
