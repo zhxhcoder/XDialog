@@ -21,7 +21,7 @@ import com.zhxh.xdialoglib.dialog.bean.TieBean;
 import com.zhxh.xdialoglib.dialog.listener.DialogUIDateTimeSaveListener;
 import com.zhxh.xdialoglib.dialog.listener.DialogUIItemListener;
 import com.zhxh.xdialoglib.dialog.listener.DialogUIListener;
-import com.zhxh.xdialoglib.dialog.listener.TdataListener;
+import com.zhxh.xdialoglib.dialog.listener.IDropListener;
 import com.zhxh.xdialoglib.dialog.widget.DateSelectorWheelView;
 
 import java.util.ArrayList;
@@ -63,7 +63,7 @@ public class DialogActivity extends AppCompatActivity {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_pop:
-                DialogUtils.showPopWindow(mContext, LinearLayout.LayoutParams.MATCH_PARENT, 4, btn_pop, new TdataListener() {
+                DialogUtils.showPopWindow(mContext, LinearLayout.LayoutParams.MATCH_PARENT, 4, btn_pop, new IDropListener() {
                     @Override
                     public void initPopData(List<PopBean> lists) {
                         for (int i = 0; i < 5; i++) {

@@ -12,7 +12,7 @@ import android.widget.PopupWindow;
 import com.zhxh.xdialoglib.R;
 import com.zhxh.xdialoglib.dialog.adapter.PopWindowAdapter;
 import com.zhxh.xdialoglib.dialog.bean.PopBean;
-import com.zhxh.xdialoglib.dialog.listener.TdataListener;
+import com.zhxh.xdialoglib.dialog.listener.IDropListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,7 +27,7 @@ public class PopupWindowView implements AdapterView.OnItemClickListener {
     private List<PopBean> popuLists = new ArrayList<PopBean>();
     private PopWindowAdapter mPopuWindowAdapter;
     private Context mContext;
-    private TdataListener mTdataListener;
+    private IDropListener mTdataListener;
     private int maxLine = 5;
 
     public PopupWindowView(Context mContext, int widthGravity) {
@@ -47,7 +47,7 @@ public class PopupWindowView implements AdapterView.OnItemClickListener {
     /**
      * 设置下拉框的数据
      */
-    public void initPupoData(TdataListener tdataListener) {
+    public void initPupoData(IDropListener tdataListener) {
         mTdataListener = tdataListener;
         if (mTdataListener != null) {
             mTdataListener.initPopData(popuLists);

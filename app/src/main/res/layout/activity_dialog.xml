@@ -101,13 +101,13 @@
                 android:id="@+id/btn_md_bottom_vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="md 风格底部竖向列表" />
+                android:text="material design底部竖向列表" />
 
             <Button
                 android:id="@+id/btn_md_bottom_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="md 风格底部横向列表" />
+                android:text="material design底部横向列表" />
 
             <Button
                 android:id="@+id/btn_toast_top"

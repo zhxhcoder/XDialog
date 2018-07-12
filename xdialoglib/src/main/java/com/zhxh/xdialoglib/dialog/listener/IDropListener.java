@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * 设置动态下拉框的数据
  */
-public interface TdataListener {
+public interface IDropListener {
     /**
      * 初始化数据
      */

@@ -17,7 +17,7 @@ import com.zhxh.xdialoglib.dialog.listener.DialogAssigner;
 import com.zhxh.xdialoglib.dialog.listener.DialogUIDateTimeSaveListener;
 import com.zhxh.xdialoglib.dialog.listener.DialogUIItemListener;
 import com.zhxh.xdialoglib.dialog.listener.DialogUIListener;
-import com.zhxh.xdialoglib.dialog.listener.TdataListener;
+import com.zhxh.xdialoglib.dialog.listener.IDropListener;
 import com.zhxh.xdialoglib.dialog.utils.ToolUtils;
 import com.zhxh.xdialoglib.dialog.widget.PopupWindowView;
 
@@ -499,7 +499,7 @@ public class DialogUtils {
         dismiss(mBuildBean);
     }
 
-    public static void showPopWindow(Context context, int widthGravity, int maxLine, View view, TdataListener tdataListener) {
+    public static void showPopWindow(Context context, int widthGravity, int maxLine, View view, IDropListener tdataListener) {
         PopupWindowView popuWindowView = new PopupWindowView(context, widthGravity);
         popuWindowView.setMaxLines(maxLine);
         popuWindowView.initPupoData(tdataListener);
