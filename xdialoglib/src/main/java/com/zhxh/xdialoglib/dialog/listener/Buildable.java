@@ -241,7 +241,7 @@ public class Buildable {
         dialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
             @Override
             public void onCancel(DialogInterface dialog) {
-                bean.listener.onCancle();
+                bean.listener.onCancel();
             }
         });
         bean.alertDialog = dialog;

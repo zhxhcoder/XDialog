@@ -1,7 +1,6 @@
 package com.zhxh.xdialoglib.dialog.listener;
 
 public abstract class DialogUIListener {
-
     /**
      * 确定
      */
@@ -21,7 +20,7 @@ public abstract class DialogUIListener {
     /**
      * 取消
      */
-    public void onCancle() {
+    public void onCancel() {
     }
 
     /**
