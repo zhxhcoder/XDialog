@@ -47,8 +47,8 @@ public class PopupWindowView implements AdapterView.OnItemClickListener {
     /**
      * 设置下拉框的数据
      */
-    public void initPupoData(IDropListener tdataListener) {
-        mTdataListener = tdataListener;
+    public void initPupoData(IDropListener dropListener) {
+        mTdataListener = dropListener;
         if (mTdataListener != null) {
             mTdataListener.initPopData(popuLists);
         }

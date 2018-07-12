@@ -499,10 +499,10 @@ public class DialogUtils {
         dismiss(mBuildBean);
     }
 
-    public static void showPopWindow(Context context, int widthGravity, int maxLine, View view, IDropListener tdataListener) {
+    public static void showPopWindow(Context context, int widthGravity, int maxLine, View view, IDropListener dropListener) {
         PopupWindowView popuWindowView = new PopupWindowView(context, widthGravity);
         popuWindowView.setMaxLines(maxLine);
-        popuWindowView.initPupoData(tdataListener);
+        popuWindowView.initPupoData(dropListener);
         popuWindowView.showing(view);
     }
 
