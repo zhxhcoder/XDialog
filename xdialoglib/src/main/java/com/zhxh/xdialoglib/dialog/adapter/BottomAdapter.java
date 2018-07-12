@@ -5,31 +5,31 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import com.zhxh.xdialoglib.R;
-import com.zhxh.xdialoglib.dialog.bean.TieBean;
+import com.zhxh.xdialoglib.dialog.bean.BottomBean;
 import com.zhxh.xdialoglib.dialog.holder.BaseItemHolder;
-import com.zhxh.xdialoglib.dialog.holder.TieItemHolder;
+import com.zhxh.xdialoglib.dialog.holder.BottomItemHolder;
 
 import java.util.List;
 /**
  * Created by zhxh on 2018/7/5
  */
 
-public class TieAdapter extends BaseAdapter<TieBean> {
+public class BottomAdapter extends BaseAdapter<BottomBean> {
 
     private boolean isItemType;
 
-    public TieAdapter(Context mContext, List<TieBean> list, boolean isItemType) {
+    public BottomAdapter(Context mContext, List<BottomBean> list, boolean isItemType) {
         super(mContext, list);
         this.isItemType = isItemType;
     }
 
-    public TieAdapter(Context mContext, List<TieBean> list) {
+    public BottomAdapter(Context mContext, List<BottomBean> list) {
         super(mContext, list);
     }
 
     @Override
     public BaseItemHolder getItemHolder(ViewGroup parent, int viewType) {
-        return new TieItemHolder(mContext, mListener, LayoutInflater.from(mContext).
+        return new BottomItemHolder(mContext, mListener, LayoutInflater.from(mContext).
                 inflate(R.layout.xdialog_holder_item_tie, parent, false));
     }
 

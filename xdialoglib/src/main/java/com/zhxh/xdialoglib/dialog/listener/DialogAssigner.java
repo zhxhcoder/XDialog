@@ -6,7 +6,7 @@ import android.view.Gravity;
 import android.view.View;
 
 import com.zhxh.xdialoglib.dialog.bean.BuildBean;
-import com.zhxh.xdialoglib.dialog.bean.TieBean;
+import com.zhxh.xdialoglib.dialog.bean.BottomBean;
 import com.zhxh.xdialoglib.dialog.config.DialogConfig;
 
 import java.util.List;
@@ -172,7 +172,7 @@ public class DialogAssigner implements Assignable {
 
 
     @Override
-    public BuildBean assignSheet(Context context, List<TieBean> datas,CharSequence bottomTxt,int gravity, boolean cancleable, boolean outsideTouchable, DialogUIItemListener listener) {
+    public BuildBean assignSheet(Context context, List<BottomBean> datas,CharSequence bottomTxt,int gravity, boolean cancleable, boolean outsideTouchable, DialogUIItemListener listener) {
         BuildBean bean = new BuildBean();
         bean.mContext = context;
         bean.itemListener = listener;
@@ -188,7 +188,7 @@ public class DialogAssigner implements Assignable {
     }
 
     @Override
-    public BuildBean assignMdBottomSheet(Context context,boolean isVertical, CharSequence title, List<TieBean> datas, int columnsNum, boolean cancleable, boolean outsideTouchable, DialogUIItemListener listener) {
+    public BuildBean assignMdBottomSheet(Context context,boolean isVertical, CharSequence title, List<BottomBean> datas, int columnsNum, boolean cancleable, boolean outsideTouchable, DialogUIItemListener listener) {
         BuildBean bean = new BuildBean();
         bean.mContext = context;
         bean.title = title;

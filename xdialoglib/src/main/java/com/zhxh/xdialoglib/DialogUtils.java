@@ -12,7 +12,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.zhxh.xdialoglib.dialog.bean.BuildBean;
-import com.zhxh.xdialoglib.dialog.bean.TieBean;
+import com.zhxh.xdialoglib.dialog.bean.BottomBean;
 import com.zhxh.xdialoglib.dialog.listener.DialogAssigner;
 import com.zhxh.xdialoglib.dialog.listener.DialogUIDateTimeSaveListener;
 import com.zhxh.xdialoglib.dialog.listener.DialogUIItemListener;
@@ -235,7 +235,7 @@ public class DialogUtils {
      * @param listener         事件监听
      * @return
      */
-    public static BuildBean showSheet(Context context, List<TieBean> datas, CharSequence bottomTxt, int gravity, boolean cancleable, boolean outsideTouchable, DialogUIItemListener listener) {
+    public static BuildBean showSheet(Context context, List<BottomBean> datas, CharSequence bottomTxt, int gravity, boolean cancleable, boolean outsideTouchable, DialogUIItemListener listener) {
         return DialogAssigner.getInstance().assignSheet(context, datas, bottomTxt, gravity, cancleable, outsideTouchable, listener);
     }
 
@@ -248,7 +248,7 @@ public class DialogUtils {
      * @param listener 事件监听
      * @return
      */
-    public static BuildBean showMdBottomSheet(Context context, boolean isVertical, CharSequence title, List<TieBean> datas, int columnsNum, DialogUIItemListener listener) {
+    public static BuildBean showMdBottomSheet(Context context, boolean isVertical, CharSequence title, List<BottomBean> datas, int columnsNum, DialogUIItemListener listener) {
         return showMdBottomSheet(context, isVertical, title, datas, columnsNum, true, true, listener);
     }
 
@@ -263,7 +263,7 @@ public class DialogUtils {
      * @param listener         事件监听
      * @return
      */
-    public static BuildBean showMdBottomSheet(Context context, boolean isVertical, CharSequence title, List<TieBean> datas, int columnsNum, boolean cancleable, boolean outsideTouchable, DialogUIItemListener listener) {
+    public static BuildBean showMdBottomSheet(Context context, boolean isVertical, CharSequence title, List<BottomBean> datas, int columnsNum, boolean cancleable, boolean outsideTouchable, DialogUIItemListener listener) {
         return DialogAssigner.getInstance().assignMdBottomSheet(context, isVertical, title, datas, columnsNum, cancleable, outsideTouchable, listener);
     }
 
@@ -477,14 +477,14 @@ public class DialogUtils {
     /**
      * 对mBuildBean的简易封装。线程不安全，不可以在非UI线程调用。
      */
-    public static void showTie(Context context) {
-        showTie(context, "加载中...");
+    public static void showBottom(Context context) {
+        showBottom(context, "加载中...");
     }
 
     /**
      * 对mBuildBean的简易封装。线程不安全，不可以在非UI线程调用。
      */
-    public static void showTie(Context context, String str) {
+    public static void showBottom(Context context, String str) {
         if (mBuildBean != null) {
             dismiss(mBuildBean);
         }
@@ -495,7 +495,7 @@ public class DialogUtils {
     /**
      * 对mBuildBean的简易封装。线程不安全，不可以在非UI线程调用。
      */
-    public static void dismssTie() {
+    public static void dismssBottom() {
         dismiss(mBuildBean);
     }
 

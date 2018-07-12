@@ -5,7 +5,7 @@ import android.content.Context;
 import android.view.View;
 
 import com.zhxh.xdialoglib.dialog.bean.BuildBean;
-import com.zhxh.xdialoglib.dialog.bean.TieBean;
+import com.zhxh.xdialoglib.dialog.bean.BottomBean;
 
 import java.util.List;
 
@@ -52,12 +52,12 @@ public interface Assignable {
     /**
      * 中间弹出列表
      */
-    BuildBean assignSheet(Context context, List<TieBean> datas, CharSequence bottomTxt, int gravity, boolean cancleable, boolean outsideTouchable, final DialogUIItemListener listener);
+    BuildBean assignSheet(Context context, List<BottomBean> datas, CharSequence bottomTxt, int gravity, boolean cancleable, boolean outsideTouchable, final DialogUIItemListener listener);
 
     /**
      * md风格弹出列表
      */
-    BuildBean assignMdBottomSheet(Context context, boolean isVertical, CharSequence title, List<TieBean> datas, int columnsNum, boolean cancleable, boolean outsideTouchable, DialogUIItemListener listener);
+    BuildBean assignMdBottomSheet(Context context, boolean isVertical, CharSequence title, List<BottomBean> datas, int columnsNum, boolean cancleable, boolean outsideTouchable, DialogUIItemListener listener);
 
     /**
      * 自定义弹出框

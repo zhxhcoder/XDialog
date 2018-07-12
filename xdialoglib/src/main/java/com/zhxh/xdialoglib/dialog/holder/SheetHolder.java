@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import com.zhxh.xdialoglib.DialogUtils;
 import com.zhxh.xdialoglib.R;
-import com.zhxh.xdialoglib.dialog.adapter.TieAdapter;
+import com.zhxh.xdialoglib.dialog.adapter.BottomAdapter;
 import com.zhxh.xdialoglib.dialog.bean.BuildBean;
 import com.zhxh.xdialoglib.dialog.listener.OnItemClickListener;
 import com.zhxh.xdialoglib.dialog.widget.DialogUIDividerItemDecoration;
@@ -36,7 +36,6 @@ public class SheetHolder extends BaseHolder {
         tvTitle = (TextView) rootView.findViewById(R.id.xdialog_tv_title);
         rView = (RecyclerView) rootView.findViewById(R.id.rlv);
         btnBottom = (Button) rootView.findViewById(R.id.btn_bottom);
-
     }
 
     @Override
@@ -75,7 +74,7 @@ public class SheetHolder extends BaseHolder {
         rView.setHasFixedSize(true);// 如果Item够简单，高度是确定的，打开FixSize将提高性能。
         rView.setItemAnimator(new DefaultItemAnimator());// 设置Item默认动画，加也行，不加也行。
         if (bean.mAdapter == null) {
-            TieAdapter adapter = new TieAdapter(bean.mContext, bean.mLists, isItemType);
+            BottomAdapter adapter = new BottomAdapter(bean.mContext, bean.mLists, isItemType);
             bean.mAdapter = adapter;
         }
         rView.setAdapter(bean.mAdapter);

@@ -4,17 +4,17 @@ import java.io.Serializable;
 /**
  * Created by zhxh on 2018/7/5
  */
-public class TieBean implements Serializable {
+public class BottomBean implements Serializable {
 
     private int id;
     private String title;
     private boolean isSelect;
 
-    public TieBean(String title) {
+    public BottomBean(String title) {
         this.title = title;
     }
 
-    public TieBean(String title, int id) {
+    public BottomBean(String title, int id) {
         this.title = title;
         this.id = id;
     }

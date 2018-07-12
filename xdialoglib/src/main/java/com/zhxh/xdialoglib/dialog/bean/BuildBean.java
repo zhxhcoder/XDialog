@@ -82,7 +82,7 @@ public class BuildBean extends Buildable implements Styleable {
 
     //bottomsheet
     public BaseAdapter mAdapter;
-    public List<TieBean> mLists;
+    public List<BottomBean> mLists;
     public int gridColumns = 4;
 
 

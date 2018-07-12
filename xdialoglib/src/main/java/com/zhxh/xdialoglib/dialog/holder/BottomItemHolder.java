@@ -6,21 +6,21 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.zhxh.xdialoglib.R;
-import com.zhxh.xdialoglib.dialog.bean.TieBean;
+import com.zhxh.xdialoglib.dialog.bean.BottomBean;
 import com.zhxh.xdialoglib.dialog.listener.OnItemClickListener;
 
 /**
  * Created by zhxh on 2018/7/5
  */
-public class TieItemHolder extends BaseItemHolder<TieBean> {
+public class BottomItemHolder extends BaseItemHolder<BottomBean> {
 
-    LinearLayout llTie;
+    LinearLayout llBottom;
     TextView tvTitle;
 
-    public TieItemHolder(Context mContext, OnItemClickListener listener, View itemView) {
+    public BottomItemHolder(Context mContext, OnItemClickListener listener, View itemView) {
         super(mContext, listener, itemView);
         tvTitle = (TextView) itemView.findViewById(R.id.tv_title);
-        llTie = (LinearLayout) itemView.findViewById(R.id.ll_tie);
+        llBottom = (LinearLayout) itemView.findViewById(R.id.ll_tie);
     }
 
     @Override
@@ -29,15 +29,15 @@ public class TieItemHolder extends BaseItemHolder<TieBean> {
          * 1top 2midle 3bottom 4all
          */
         if (itemPositionType == 1) {
-            llTie.setBackgroundResource(R.drawable.xdialog_selector_all_top);
+            llBottom.setBackgroundResource(R.drawable.xdialog_selector_all_top);
         } else if (itemPositionType == 3) {
-            llTie.setBackgroundResource(R.drawable.xdialog_selector_all_bottom);
+            llBottom.setBackgroundResource(R.drawable.xdialog_selector_all_bottom);
         } else if (itemPositionType == 4) {
-            llTie.setBackgroundResource(R.drawable.xdialog_selector_all);
+            llBottom.setBackgroundResource(R.drawable.xdialog_selector_all);
         } else {
-            llTie.setBackgroundResource(R.drawable.xdialog_selector_all_no);
+            llBottom.setBackgroundResource(R.drawable.xdialog_selector_all_no);
         }
-        TieBean data = getData();
+        BottomBean data = getData();
         tvTitle.setText("" + data.getTitle());
     }
 }

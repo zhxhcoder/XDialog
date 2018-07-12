@@ -14,10 +14,10 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 
 import com.zhxh.xdialoglib.DialogUtils;
-import com.zhxh.xdialoglib.dialog.adapter.TieAdapter;
+import com.zhxh.xdialoglib.dialog.adapter.BottomAdapter;
 import com.zhxh.xdialoglib.dialog.bean.BuildBean;
 import com.zhxh.xdialoglib.dialog.bean.PopBean;
-import com.zhxh.xdialoglib.dialog.bean.TieBean;
+import com.zhxh.xdialoglib.dialog.bean.BottomBean;
 import com.zhxh.xdialoglib.dialog.listener.DialogUIDateTimeSaveListener;
 import com.zhxh.xdialoglib.dialog.listener.DialogUIItemListener;
 import com.zhxh.xdialoglib.dialog.listener.DialogUIListener;
@@ -192,10 +192,10 @@ public class DialogActivity extends AppCompatActivity {
                 }).show();
                 break;
             case R.id.btn_center_sheet: {
-                List<TieBean> strings = new ArrayList<TieBean>();
-                strings.add(new TieBean("1"));
-                strings.add(new TieBean("2"));
-                strings.add(new TieBean("3"));
+                List<BottomBean> strings = new ArrayList<BottomBean>();
+                strings.add(new BottomBean("1"));
+                strings.add(new BottomBean("2"));
+                strings.add(new BottomBean("3"));
                 DialogUtils.showSheet(mActivity, strings, "", Gravity.CENTER, true, true, new DialogUIItemListener() {
                     @Override
                     public void onItemClick(CharSequence text, int position) {
@@ -205,10 +205,10 @@ public class DialogActivity extends AppCompatActivity {
             }
             break;
             case R.id.btn_bottom_sheet_cancel: {
-                List<TieBean> strings = new ArrayList<TieBean>();
-                strings.add(new TieBean("1"));
-                strings.add(new TieBean("2"));
-                strings.add(new TieBean("3"));
+                List<BottomBean> strings = new ArrayList<BottomBean>();
+                strings.add(new BottomBean("1"));
+                strings.add(new BottomBean("2"));
+                strings.add(new BottomBean("3"));
                 DialogUtils.showSheet(mActivity, strings, "取消", Gravity.BOTTOM, true, true, new DialogUIItemListener() {
                     @Override
                     public void onItemClick(CharSequence text, int position) {
@@ -223,14 +223,14 @@ public class DialogActivity extends AppCompatActivity {
             }
             break;
             case R.id.btn_md_bottom_vertical:
-                List<TieBean> datas2 = new ArrayList<TieBean>();
-                datas2.add(new TieBean("1"));
-                datas2.add(new TieBean("2"));
-                datas2.add(new TieBean("3"));
-                datas2.add(new TieBean("4"));
-                datas2.add(new TieBean("5"));
-                datas2.add(new TieBean("6"));
-                TieAdapter adapter = new TieAdapter(mContext, datas2, true);
+                List<BottomBean> datas2 = new ArrayList<BottomBean>();
+                datas2.add(new BottomBean("1"));
+                datas2.add(new BottomBean("2"));
+                datas2.add(new BottomBean("3"));
+                datas2.add(new BottomBean("4"));
+                datas2.add(new BottomBean("5"));
+                datas2.add(new BottomBean("6"));
+                BottomAdapter adapter = new BottomAdapter(mContext, datas2, true);
                 BuildBean buildBean = DialogUtils.showMdBottomSheet(mActivity, true, "", datas2, 0, new DialogUIItemListener() {
                     @Override
                     public void onItemClick(CharSequence text, int position) {
@@ -241,13 +241,13 @@ public class DialogActivity extends AppCompatActivity {
                 buildBean.show();
                 break;
             case R.id.btn_md_bottom_horizontal:
-                List<TieBean> datas3 = new ArrayList<TieBean>();
-                datas3.add(new TieBean("1"));
-                datas3.add(new TieBean("2"));
-                datas3.add(new TieBean("3"));
-                datas3.add(new TieBean("4"));
-                datas3.add(new TieBean("5"));
-                datas3.add(new TieBean("6"));
+                List<BottomBean> datas3 = new ArrayList<BottomBean>();
+                datas3.add(new BottomBean("1"));
+                datas3.add(new BottomBean("2"));
+                datas3.add(new BottomBean("3"));
+                datas3.add(new BottomBean("4"));
+                datas3.add(new BottomBean("5"));
+                datas3.add(new BottomBean("6"));
                 DialogUtils.showMdBottomSheet(mActivity, false, "标题", datas3, 4, new DialogUIItemListener() {
                     @Override
                     public void onItemClick(CharSequence text, int position) {
