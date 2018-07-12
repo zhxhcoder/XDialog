@@ -16,46 +16,47 @@ import com.zhxh.xdialoglib.dialog.listener.IDropListener;
 
 import java.util.ArrayList;
 import java.util.List;
+
 /**
  * Created by zhxh on 2018/7/5
  */
 public class PopupWindowView implements AdapterView.OnItemClickListener {
 
     View viewItem = null;
-    ListView pupoListView;
+    ListView popupListView;
     PopupWindow pullDownView;// 弹出窗口
-    private List<PopBean> popuLists = new ArrayList<PopBean>();
-    private PopWindowAdapter mPopuWindowAdapter;
+    private List<PopBean> popupList = new ArrayList<PopBean>();
+    private PopWindowAdapter popWindowAdapter;
     private Context mContext;
-    private IDropListener mTdataListener;
+    private IDropListener dropListener;
     private int maxLine = 5;
 
     public PopupWindowView(Context mContext, int widthGravity) {
         this.mContext = mContext;
         LayoutInflater inflater = LayoutInflater.from(mContext);
         viewItem = inflater.inflate(R.layout.xdialog_popu_options, null);
-        pupoListView = (ListView) viewItem.findViewById(R.id.customui_list);
-        mPopuWindowAdapter = new PopWindowAdapter(mContext, popuLists);
-        pupoListView.setAdapter(mPopuWindowAdapter);
+        popupListView = (ListView) viewItem.findViewById(R.id.customui_list);
+        popWindowAdapter = new PopWindowAdapter(mContext, popupList);
+        popupListView.setAdapter(popWindowAdapter);
         pullDownView = new PopupWindow(viewItem, widthGravity,
                 LayoutParams.WRAP_CONTENT, true);
         pullDownView.setOutsideTouchable(true);
         pullDownView.setBackgroundDrawable(new BitmapDrawable());
-        pupoListView.setOnItemClickListener(this);
+        popupListView.setOnItemClickListener(this);
     }
 
     /**
      * 设置下拉框的数据
      */
-    public void initPupoData(IDropListener dropListener) {
-        mTdataListener = dropListener;
-        if (mTdataListener != null) {
-            mTdataListener.initPopData(popuLists);
+    public void initPopupData(IDropListener dropListener) {
+        this.dropListener = dropListener;
+        if (this.dropListener != null) {
+            this.dropListener.initPopData(popupList);
         }
-        if (popuLists != null && popuLists.size() > maxLine) {
+        if (popupList != null && popupList.size() > maxLine) {
             pullDownView.setHeight(dip2px(maxLine * 40));
         }
-        mPopuWindowAdapter.notifyDataSetChanged();
+        popWindowAdapter.notifyDataSetChanged();
     }
 
     private int dip2px(int dip) {
@@ -86,9 +87,9 @@ public class PopupWindowView implements AdapterView.OnItemClickListener {
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-        if (mTdataListener != null) {
+        if (dropListener != null) {
             dismiss();
-            mTdataListener.onItemClick(adapterView, view, position);
+            dropListener.onItemClick(adapterView, view, position);
         }
     }
 
@@ -96,21 +97,21 @@ public class PopupWindowView implements AdapterView.OnItemClickListener {
      * 获取选择的名称
      */
     public String getTitle(int popuPosition) {
-        return popuLists.get(popuPosition).getTitle();
+        return popupList.get(popuPosition).getTitle();
     }
 
     /**
      * 获取选择的id
      */
     public int getId(int popuPosition) {
-        return popuLists.get(popuPosition).getId();
+        return popupList.get(popuPosition).getId();
     }
 
     /**
      * 获取选择的sid
      */
     public String getSid(int popuPosition) {
-        return popuLists.get(popuPosition).getSid();
+        return popupList.get(popuPosition).getSid();
     }
 
 }

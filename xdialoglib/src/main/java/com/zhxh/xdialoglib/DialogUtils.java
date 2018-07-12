@@ -500,10 +500,10 @@ public class DialogUtils {
     }
 
     public static void showPopWindow(Context context, int widthGravity, int maxLine, View view, IDropListener dropListener) {
-        PopupWindowView popuWindowView = new PopupWindowView(context, widthGravity);
-        popuWindowView.setMaxLines(maxLine);
-        popuWindowView.initPupoData(dropListener);
-        popuWindowView.showing(view);
+        PopupWindowView popupWindowView = new PopupWindowView(context, widthGravity);
+        popupWindowView.setMaxLines(maxLine);
+        popupWindowView.initPopupData(dropListener);
+        popupWindowView.showing(view);
     }
 
 
