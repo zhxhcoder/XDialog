@@ -126,7 +126,6 @@ public class DialogActivity extends AppCompatActivity {
                 DialogUtils.showMdMultiChoose(mActivity, "标题", words, choseDefault, new DialogUIListener() {
                     @Override
                     public void onPositive() {
-
                     }
 
                     @Override
