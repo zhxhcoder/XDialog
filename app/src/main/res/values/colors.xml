@@ -3,4 +3,76 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+
+
+
+    <!-- 白色 -->
+    <color name="color_white">#FFFFFFFF</color>
+    <!-- 10%白色 -->
+    <color name="color_white_10">#50FFFFFF</color>
+    <!-- 50%白色 -->
+    <color name="color_white_50">#80FFFFFF</color>
+    <!-- 主背景色 -->
+    <color name="color_main_bg">#FFf3f4f5</color>
+    <!-- 主内容背景色 -->
+    <color name="color_main_content_bg">#FFFFFFFF</color>
+    <!-- 列表表头背景色 -->
+    <color name="color_list_item_title_bg">#f3f4f5</color>
+    <!-- 主色 -->
+    <color name="color_main">#FF5471ef</color>
+    <!--FF50668b  -->
+    <color name="color_main_red">#ff4c51</color>
+
+
+
+
+    <!--新颜色-->
+    <color name="C1">#2a4159</color>
+    <color name="C1_10">#1A2A4159</color>
+    <color name="C1_P">#7F2A4159</color>
+    <color name="C2">#2A4159</color>
+    <color name="C2_P">#7F2A4159</color>
+    <color name="C3">#52668C</color>
+    <color name="C3_P">#7F52668C</color>
+    <color name="C4">#8997A5</color>
+    <color name="C4_P">#7F8997A5</color>
+    <color name="C5">#B4B4B4</color>
+    <color name="C5_P">#7FB4B4B4</color>
+    <color name="C6">#D8D8D8</color>
+    <color name="C6_P">#7FD8D8D8</color>
+    <color name="C7">#E8E8E8</color>
+    <color name="C7_P">#DDDDDD</color>
+    <color name="C8">#F4F5F6</color>
+    <color name="C8_P">#E8E8E8</color>
+    <color name="C9">#FFFFFF</color>
+    <color name="C9_P">#7FFFFFFF</color>
+    <color name="C10">#FFFFFF</color>
+    <color name="C10_P">#E8E8E8</color>
+    <color name="C11">#7FFFFFFF</color>
+    <color name="C11_P">#BFFFFFFF</color>
+    <color name="C12">#FF4C51</color>
+    <color name="C12_P">#7FFF4C51</color>
+    <color name="C13">#FF458CF5</color>
+    <color name="C13_P">#7F458CF5</color>
+    <color name="C14">#22BB7E</color>
+    <color name="C14_P">#7F22BB7E</color>
+    <color name="C15">#FFB000</color>
+    <color name="C15_P">#7FFFB000</color>
+    <color name="C16">#CCFFFFFF</color>
+    <color name="C16_P">#3FFFFFFF</color>
+    <color name="C17">#EC5A58</color>
+    <color name="C17_P">#7FEC5A58</color>
+    <color name="C18">#F9FBFD</color>
+    <color name="C18_P">#7FF9FBFD</color>
+    <color name="C19">#E2E9F1</color>
+    <color name="C19_P">#7FE2E9F1</color>
+    <color name="C20">#EEF5FE</color>
+    <color name="C20_P">#7FEEF5FE</color>
+
+
+
+
+
+
 </resources>

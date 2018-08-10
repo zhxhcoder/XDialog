@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ToastActivity" />
-        <activity android:name=".DialogActivity"></activity>
+        <activity android:name=".DialogActivity" />
+        <activity android:name=".TestActivity"></activity>
     </application>
 
 </manifest>
