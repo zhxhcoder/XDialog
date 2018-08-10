@@ -35,7 +35,7 @@ class QuantDkMainDialog : DialogFragment() {
         super.onStart()
 
         val dm = DisplayMetrics()
-        activity.windowManager.defaultDisplay.getMetrics(dm)
+        activity?.windowManager?.defaultDisplay?.getMetrics(dm)
         dialog?.window?.setLayout(dm.widthPixels, dialog.window.attributes.height)
 
     }

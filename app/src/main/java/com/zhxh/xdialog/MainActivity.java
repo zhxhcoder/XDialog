@@ -13,5 +13,6 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.btnToast).setOnClickListener(v -> startActivity(new Intent(MainActivity.this, ToastActivity.class)));
         findViewById(R.id.btnDialog).setOnClickListener(v -> startActivity(new Intent(MainActivity.this, DialogActivity.class)));
+        findViewById(R.id.btnDialogFragment).setOnClickListener(v -> startActivity(new Intent(MainActivity.this, TestActivity.class)));
     }
 }
