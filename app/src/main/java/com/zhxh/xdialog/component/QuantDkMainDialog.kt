@@ -50,12 +50,31 @@ class QuantDkMainDialog : DialogFragment() {
 
         val dialogType = arguments?.getInt("dialogType")
 
+        val type1Layout = root.findViewById<View>(R.id.type1Layout)
+        val type2Layout = root.findViewById<View>(R.id.type2Layout)
+        val type3Layout = root.findViewById<View>(R.id.type3Layout)
         val tvTitle = root.findViewById<TextView>(R.id.tvTitle)
 
-        tvTitle.text = "dd$dialogType"
 
+        when (dialogType) {
+            1 -> {
+                type1Layout.visibility = View.VISIBLE
+                type2Layout.visibility = View.GONE
+                type3Layout.visibility = View.GONE
 
+                tvTitle.text = "恭喜你获得看盘神器\\nDK短线宝+指标"
+            }
+            2 -> {
+                type1Layout.visibility = View.GONE
+                type2Layout.visibility = View.VISIBLE
+                type3Layout.visibility = View.GONE
+            }
+            3 -> {
+                type1Layout.visibility = View.GONE
+                type2Layout.visibility = View.GONE
+                type3Layout.visibility = View.VISIBLE
+            }
+        }
     }
-
 
 }
