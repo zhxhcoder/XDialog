@@ -44,13 +44,15 @@ public class TestActivity extends AppCompatActivity {
             dialog.show(getSupportFragmentManager(), "");
 
             dialogType = (dialogType++) % 3 + 1;
+
+
+            //TODO 倒计时
+            getObservable().delay(6, TimeUnit.SECONDS)
+                 //  .subscribeOn(Schedulers.io())
+                 //  .observeOn(AndroidSchedulers.mainThread())
+                    .subscribe(getObserver());
+
         });
-
-
-        getObservable().delay(5, TimeUnit.SECONDS)
-                .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(getObserver());
 
 
     }
