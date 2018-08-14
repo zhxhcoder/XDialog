@@ -12,7 +12,9 @@ import java.util.concurrent.TimeUnit
 
 import io.reactivex.Observable
 import io.reactivex.Observer
+import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
+import io.reactivex.schedulers.Schedulers
 
 class TestActivity : AppCompatActivity() {
 
@@ -74,13 +76,11 @@ class TestActivity : AppCompatActivity() {
 
             //TODO 倒计时
             observable.delay(6, TimeUnit.SECONDS)
-                    //  .subscribeOn(Schedulers.io())
-                    //  .observeOn(AndroidSchedulers.mainThread())
+                    .subscribeOn(Schedulers.io())
+                    .observeOn(AndroidSchedulers.mainThread())
                     .subscribe(observer)
 
         }
 
-
     }
-
 }
