@@ -10,13 +10,9 @@ import com.zhxh.xdialog.component.QuantDkMainDialog;
 
 import java.util.concurrent.TimeUnit;
 
-import java.util.concurrent.TimeUnit;
-
 import io.reactivex.Observable;
 import io.reactivex.Observer;
-import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
-import io.reactivex.schedulers.Schedulers;
 
 public class TestActivity extends AppCompatActivity {
 
@@ -48,8 +44,8 @@ public class TestActivity extends AppCompatActivity {
 
             //TODO 倒计时
             getObservable().delay(6, TimeUnit.SECONDS)
-                 //  .subscribeOn(Schedulers.io())
-                 //  .observeOn(AndroidSchedulers.mainThread())
+                    //  .subscribeOn(Schedulers.io())
+                    //  .observeOn(AndroidSchedulers.mainThread())
                     .subscribe(getObserver());
 
         });
