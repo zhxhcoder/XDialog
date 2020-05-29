@@ -11,7 +11,7 @@ import android.view.WindowManager;
 
 /**
  * 做了一些修改，避免7.1.1上BadTokenException的context
- * Created by zhxh on 2018/7/5
+ * Created by zhxh on 2018/7/5-
  * @link https://github.com/drakeet/ToastCompat
  */
 final class SafeToastContext extends ContextWrapper {
